@@ -1,4 +1,6 @@
-﻿@{
+﻿@model HomeVM
+
+@{
     ViewData["Title"] = "Index";
 }
 
@@ -6,12 +8,12 @@
       <!-- section banner start -->
       <section
         id="banner"
-        style="background-image: url(/assets/images/herobg.jpg)"
+        style="background-image: url(/assets/images/@Model.Banner.Image)"
       >
         <div class="banner-wright">
-          <h5>Best Quality Plants</h5>
+          <h5>@Model.Banner.Title</h5>
           <div class="banner-amazing">
-            <h1>Amazing Variety Of Plants Starting Just $6</h1>
+            <h1>@Model.Banner.Desc</h1>
           </div>
           <button type="button" class="btn btn-danger">Shop Now</button>
         </div>
@@ -21,33 +23,21 @@
       <section id="elementor">
         <div class="container">
           <div class="row">
-            <div class="col-4">
-              <div class="collection">
-                <i aria-hidden="true" class="fas fa-spa"></i>
-                <div class="collection-desc">
-                  <h5>Plants Collection</h5>
-                  <h6>Any plants for your space</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="shipping">
-                <i aria-hidden="true" class="fas fa-box"></i>
-                <div class="shipping-desc">
-                  <h5>Free Shipping</h5>
-                  <h6>Free shipping on order</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="money">
-                <i aria-hidden="true" class="fas fa-sync"></i>
-                <div class="money-desc">
-                  <h5>100% Money Back</h5>
-                  <h6>If the item didn't suit you</h6>
-                </div>
-              </div>
-            </div>
+                @foreach (var item in Model.Elementors)
+                {
+                    <div class="col-4">
+                        <div class="collection">
+                            <i aria-hidden="true" class="fas fa-spa"></i>
+                            <div class="collection-desc">
+                                <h5>@item.Title</h5>
+                                <h6>@item.Description</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+           
+            
           </div>
         </div>
       </section>

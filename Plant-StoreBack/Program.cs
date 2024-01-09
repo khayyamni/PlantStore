@@ -1,7 +1,33 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Plant_StoreBack.Data;
+using Plant_StoreBack.Models;
+using Plant_StoreBack.Services;
+using Plant_StoreBack.Services.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddAutoMapper(typeof(Program));
+
+
+
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddIdentity<AppUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();
+
+builder.Services.AddScoped<ISettingsService, SettingService>();
+builder.Services.AddScoped<IBannerService, BannerService>();
+builder.Services.AddScoped<IElementorService, ElementorService>();
+
+
+
 
 var app = builder.Build();
 
