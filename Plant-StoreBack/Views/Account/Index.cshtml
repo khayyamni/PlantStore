@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+@section css{
+    <link rel="stylesheet" href="~/assets/css/account.css" />
+
+}
+
+
+
+<main style="background-color: #F8F7F6;">
+    <div class="container mt-5">
+        <div data-id="1" class="account">
+            <div class="login">
+                <form action="action_page.php" method="post">
+                    <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit">Login</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button data-id="2" type="button" class="register btn ">Register</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div data-id="2" class="account d-none">
+            <div class="register">
+                <form action="action_page.php" method="post">
+                    <div class="container">
+                        <label for="uname"><b>Email</b></label>
+                        <input type="email" placeholder="Enter Email" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <label for="psw"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit">Register</button>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <span class="psw">Already have an account?</span>
+                        <button data-id="1" type="button" class="register btn">Login</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</main>
+

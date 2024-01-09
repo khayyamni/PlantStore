@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Plant-StoreBack.props" />
+</Project>

@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="icon" href="~/assets/images/plants-store-logo-green.svg" sizes="32x32">
+    <link rel="stylesheet" href="~/assets/css/home.css"/>
+    @RenderSection("css", required:false)
+
+</head>
+<body>
+    <header class="mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="natural">
+                        <div class="image">
+                            <a href="home.html">
+                                <img src="~/assets/images/plants-store-logo-green.svg"
+                                     alt="" />
+                            </a>
+                        </div>
+                        <div class="name">
+                            <a href="">Simply Natural</a>
+                        </div>
+                        <div class="search-icon">
+                            <input type="text" placeholder="Search Anything..." />
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="navigation">
+                        <div>
+                            <a href="">Home</a>
+                        </div>
+
+                        <div class="store">
+                            <a href="shop.html">Shop</a>
+                            <!-- <div class="sub-menu">
+                              <a href="">Plants</a>
+                              <a href="">Cactus</a>
+                            </div> -->
+                        </div>
+
+                        <div>
+                            <a href="about.html">About Us</a>
+                        </div>
+                        <div>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                        <div class="account ">
+                            <a href="account.html">My Account</a>
+                            <!-- <div class="login">
+                              <a href="">Login</a>
+                              <a href="">Register</a>
+                            </div> -->
+                        </div>
+                        <div class="button d-none">
+                            <button type="button" class="btn btn-danger">Logout</button>
+                        </div>
+                        <div class="icon d-flex">
+                            <div class="basket">
+                                <a href="basket.html">
+                                    <i class="fas fa-shopping-basket"></i>
+                                    <span>0</span>
+                                </a>
+                            </div>
+                            <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </header>    
+            @RenderBody()
+    <footer>
+      <div class="footer-top">
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-3">
+              <div class="natural">
+                <div class="image">
+                  <img
+                    src="./assets/images/plants-store-logo-green.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="name">
+                  <span>Simply Natural</span>
+                </div>
+                <div class="social">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="quick-footer">
+                <h4>Quick Links</h4>
+                <div>
+                  <a href="">Introduction</a>
+                  <a href="">know more About Us</a>
+                  <a href="">Visit Store</a>
+                  <a href="">Let’s Connect</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="important-footer">
+                <h4>Important Links</h4>
+                <div>
+                  <a href="">Privacy Policy</a>
+                  <a href="">Shipping Details</a>
+                  <a href="">Terms & Conditions</a>
+                  <a href="">Media Kit</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="touch-footer">
+                <h4>
+                  Get In Touch With Us For The Best Quality Plants & Succulents
+                </h4>
+                <div>
+                  <p>
+                    Qui dolore ipsum quia dolor sit amet, consec tetur adipisci
+                    velit, sed quia non numquam eius modi tempora incidunt lores
+                    ta porro ame.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <p>Copyright © 2023 Simply Natural</p>
+            </div>
+            <div class="col-6">
+              <p style="text-align: end">Powered by Simply Natural</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="~/assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="~/assets/js/pages/home/swinger.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/home.js"></script>
+    @RenderSection("script", required: false);
+  </body>
+</html>

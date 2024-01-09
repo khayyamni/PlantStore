@@ -1,0 +1,265 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Plant-StoreBack.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Plant-StoreBack.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\about.css",
+      "PackagePath": "staticwebassets\\assets\\css\\about.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\about.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\about.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\about.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\about.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\account.css",
+      "PackagePath": "staticwebassets\\assets\\css\\account.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\account.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\account.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\account.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\account.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\basket.css",
+      "PackagePath": "staticwebassets\\assets\\css\\basket.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\basket.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\basket.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\basket.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\basket.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\contact.css",
+      "PackagePath": "staticwebassets\\assets\\css\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\contact.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\contact.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\contact.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\contact.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\home.css",
+      "PackagePath": "staticwebassets\\assets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\home.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\home.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\home.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\home.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\productdetail.css",
+      "PackagePath": "staticwebassets\\assets\\css\\productdetail.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\productdetail.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\productdetail.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\productdetail.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\productdetail.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\shop.css",
+      "PackagePath": "staticwebassets\\assets\\css\\shop.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\shop.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\shop.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\shop.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\shop.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\wishlist.css",
+      "PackagePath": "staticwebassets\\assets\\css\\wishlist.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\wishlist.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\wishlist.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\css\\wishlist.scss",
+      "PackagePath": "staticwebassets\\assets\\css\\wishlist.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\CTA-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\CTA-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\about-page\\about-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\about-page\\about-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\about-page\\blog\\teammate-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\about-page\\blog\\teammate-1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\about-page\\blog\\teammate-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\about-page\\blog\\teammate-2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\about-page\\blog\\teammate-3-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\about-page\\blog\\teammate-3-1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\about-page\\company\\bg4-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\about-page\\company\\bg4-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\blog\\cactus2-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\cactus2-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\blog\\plant4-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\plant4-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\blog\\plant6-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\plant6-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\contact-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\contact-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\herobg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\herobg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\plants-store-logo-green.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\plants-store-logo-green.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\cactus2-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\cactus2-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\cactus4-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\cactus4-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\cactus6-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\cactus6-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\plant1-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\plant1-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\plant3-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\plant3-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\plant4-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\plant4-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\plant5-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\plant5-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\plant6-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\plant6-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\product-detail\\cactus2-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\product-detail\\cactus2-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\catcus\\cactus3-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\shop-page\\card\\catcus\\cactus3-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\catcus\\cactus5-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\shop-page\\card\\catcus\\cactus5-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plants\\plant1-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\shop-page\\card\\plants\\plant1-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plants\\plant2-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\shop-page\\card\\plants\\plant2-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plants\\plant3-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\shop-page\\card\\plants\\plant3-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plants\\plant4-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\shop-page\\card\\plants\\plant4-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plants\\plant5-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\shop-page\\card\\plants\\plant5-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plants\\plant6-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\shop-page\\card\\plants\\plant6-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\store-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\shop-page\\store-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\testimonials\\testimonial-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\testimonials\\testimonial-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\testimonials\\user1-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\testimonials\\user1-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\testimonials\\user3-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\testimonials\\user3-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\js\\account.js",
+      "PackagePath": "staticwebassets\\assets\\js\\account.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\js\\home.js",
+      "PackagePath": "staticwebassets\\assets\\js\\home.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\js\\shop.js",
+      "PackagePath": "staticwebassets\\assets\\js\\shop.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Plant-StoreBack.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Plant-StoreBack.props",
+      "PackagePath": "build\\Plant-StoreBack.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Plant-StoreBack.props",
+      "PackagePath": "buildMultiTargeting\\Plant-StoreBack.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Plant-StoreBack.props",
+      "PackagePath": "buildTransitive\\Plant-StoreBack.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

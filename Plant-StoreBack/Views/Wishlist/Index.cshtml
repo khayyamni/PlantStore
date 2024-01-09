@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+@section css{
+    <link rel="stylesheet" href="~/assets/css/wishlist.css" />
+}
+
+
+<main style="background-color: #F8F7F6;">
+    <!-- section banner start -->
+    <section id="banner" style="background-image: url(/assets/images/shop-page/store-bg.jpg)">
+        <div class="banner-wright">
+            <h1>Your wishlist page</h1>
+        </div>
+        </div>
+    </section>
+    <!-- section banner end -->
+
+    <section id="wishlists">
+        <div class="container">
+            <div class="wishlist-all">
+                <div class="empty">
+                    <p>Wishlist cann't empty</p>
+                    <a href="shop.html">GO TO SHOP PAGE</a>
+                </div>
+
+                <div class="wishlist-table d-none">
+                    <h3>Your Wishlist</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Add To Basket</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="~/assets/images/product/product-detail/cactus2-free-img.jpg">
+                                </td>
+                                <td>Cleistocactus</td>
+                                <td>$25.00</td>
+                                <td><i class="fas fa-shopping-basket"></i>  </td>
+                                <td>
+                                    <button type="submit" class="btn btn-outline-danger delete-basket-item">Delete</button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+

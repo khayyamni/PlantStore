@@ -1,0 +1,234 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background-color: white;
+}
+header .natural {
+  display: flex;
+}
+header .natural .search-icon {
+  margin: 0px 0 0 80px;
+  position: relative;
+  width: 60%;
+}
+header .natural .search-icon input {
+  border: 1px solid black;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  height: 45px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.031);
+  padding: 20px;
+}
+header .natural .search-icon i {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  color: rgba(0, 0, 0, 0.655);
+}
+header .natural .image {
+  width: 6.5%;
+}
+header .natural .image img {
+  width: 100%;
+}
+header .natural .name {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 7px 0px 1px 12px;
+}
+header .navigation {
+  display: flex;
+  margin: 10px 0px 0px 10px;
+}
+header .navigation .button {
+  margin-left: 33px;
+}
+header .navigation .button button {
+  background-color: #fc5f5f;
+  margin-right: 25px;
+  padding: 0px;
+  width: 100%;
+  border: none;
+}
+header .navigation a {
+  margin-left: 25px;
+}
+header .navigation a:hover {
+  color: red;
+  transition: 0.5s;
+}
+header .navigation .icon .basket {
+  position: relative;
+}
+header .navigation .icon .basket span {
+  position: absolute;
+  bottom: 14px;
+  left: 38px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+#banner {
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+#banner .banner-wright {
+  padding: 85px;
+  margin-left: 35px;
+}
+#banner .banner-wright h1 {
+  margin-top: 150px;
+  font-size: 60px;
+  font-weight: 700;
+  color: #2b2f38;
+}
+
+#wishlists .wishlist-all .empty {
+  padding: 6rem 0;
+  text-align: center;
+}
+#wishlists .wishlist-all .empty p {
+  font-size: 33px;
+  color: #A0A0A0;
+  margin-bottom: 60px;
+}
+#wishlists .wishlist-all .empty a {
+  font-size: 14px;
+  background-color: #fc5f5f;
+  color: white;
+  transition: 0.5s;
+  padding: 20px 30px;
+  letter-spacing: 3px;
+  border-radius: 30px;
+}
+#wishlists .wishlist-all .empty a:hover {
+  color: white;
+  background-color: rgba(76, 171, 3, 0.799);
+}
+#wishlists .wishlist-all .wishlist-table {
+  padding: 6rem 0;
+}
+#wishlists .wishlist-all .wishlist-table h3 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#wishlists .wishlist-all .wishlist-table table thead tr {
+  text-align: center;
+}
+#wishlists .wishlist-all .wishlist-table table thead tr th {
+  font-size: 18px;
+}
+#wishlists .wishlist-all .wishlist-table table thead tr th:nth-child(1) {
+  width: 18%;
+}
+#wishlists .wishlist-all .wishlist-table table tbody tr {
+  vertical-align: baseline;
+}
+#wishlists .wishlist-all .wishlist-table table tbody tr img {
+  height: 130px;
+  width: 135px;
+}
+#wishlists .wishlist-all .wishlist-table table tbody tr td {
+  font-size: 22px;
+  text-align: center;
+}
+#wishlists .wishlist-all .wishlist-table table tbody tr td i {
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#wishlists .wishlist-all .wishlist-table table tbody tr td i:hover {
+  color: rgba(76, 171, 3, 0.799);
+  transition: 0.5s;
+}
+
+footer {
+  margin-top: 100px;
+}
+footer .footer-top {
+  margin-bottom: 70px;
+}
+footer .footer-top .natural {
+  margin-left: 20px;
+}
+footer .footer-top .natural .image {
+  width: 30%;
+}
+footer .footer-top .natural .image img {
+  width: 100%;
+  margin-left: 45px;
+}
+footer .footer-top .natural .name {
+  font-size: 20px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.653);
+  margin: 15px 0px 1px 12px;
+}
+footer .footer-top .natural .social {
+  padding: 8px;
+  margin-top: 20px;
+}
+footer .footer-top .natural .social i {
+  margin-left: 8px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(2, 2, 37, 0.641);
+  color: white;
+  transition: 0.5s;
+}
+footer .footer-top .natural .social i:hover {
+  background-color: green;
+  transition: 0.5s;
+}
+footer .footer-top .quick-footer h4 {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+footer .footer-top .quick-footer a {
+  display: block;
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.586);
+  font-weight: 500;
+}
+footer .footer-top .important-footer h4 {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+footer .footer-top .important-footer a {
+  display: block;
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.586);
+  font-weight: 500;
+}
+footer .footer-top .touch-footer h4 {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+footer .footer-top .touch-footer p {
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.586);
+  font-weight: 500;
+}
+footer .footer-bottom {
+  margin-bottom: 70px;
+}/*# sourceMappingURL=wishlist.css.map */
