@@ -14,6 +14,8 @@ namespace Plant_StoreBack.Data
         public DbSet<Setting> Settings { get; set; }
         public DbSet<Banner> Banners { get; set; }
         public DbSet<Elementor> Elementors { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
+        public DbSet<Featured> Featureds { get; set; }
 
 
 
@@ -24,6 +26,8 @@ namespace Plant_StoreBack.Data
             modelBuilder.Entity<Setting>().HasQueryFilter(m => !m.SoftDeleted);
             modelBuilder.Entity<Banner>().HasQueryFilter(m => !m.SoftDeleted);
             modelBuilder.Entity<Elementor>().HasQueryFilter(m => !m.SoftDeleted);
+            modelBuilder.Entity<Blog>().HasQueryFilter(m => !m.SoftDeleted);
+            modelBuilder.Entity<Featured>().HasQueryFilter(m => !m.SoftDeleted);
         }
 
     }

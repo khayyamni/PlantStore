@@ -34,10 +34,7 @@
                             </div>
                         </div>
                     </div>
-
                 }
-           
-            
           </div>
         </div>
       </section>
@@ -46,42 +43,23 @@
       <section id="blog-part">
         <div class="container">
           <div class="row">
-            <div class="col-4">
-              <div class="blog-card">
-                <div class="blog-image">
-                  <img src="~/assets/images/blog/plant6-free-img.jpg" alt="" />
-                  <div class="blog-wright">
-                    <h5>Beautiful Plant Varieties</h5>
-                    <p>Luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                    <a href="">SEE COLLECTION</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="blog-card">
-                <div class="blog-image">
-                  <img src="~/assets/images/blog/cactus2-free-img.jpg" alt="" />
-                  <div class="blog-wright">
-                    <h5>Trendy Cactus Varieties</h5>
-                    <p>Luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                    <a href="">SEE COLLECTION</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="blog-card">
-                <div class="blog-image">
-                  <img src="~/assets/images/blog/plant4-free-img.jpg" alt="" />
-                  <div class="blog-wright">
-                    <h5>Gardening Accessories</h5>
-                    <p>Luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                    <a href="">VISIT THE STORE</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+                @foreach (var item in Model.Blogs)
+                {
+                    <div class="col-4">
+                        <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="~/assets/images/blog/@item.Image" alt="" />
+                                <div class="blog-wright">
+                                    <h5>@item.Title</h5>
+                                    <p>@item.Description</p>
+                                    <a href="">SEE COLLECTION</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+         
+           
           </div>
         </div>
       </section>
@@ -90,8 +68,8 @@
       <section id="featured">
         <div class="container">
           <div class="featured-desc">
-            <h2>Featured Plants</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h2>@Model.Featured.Title</h2>
+            <p>@Model.Featured.Description</p>
           </div>
         </div>
       </section>

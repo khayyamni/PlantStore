@@ -25,6 +25,8 @@ builder.Services.AddIdentity<AppUser, IdentityRole>()
 builder.Services.AddScoped<ISettingsService, SettingService>();
 builder.Services.AddScoped<IBannerService, BannerService>();
 builder.Services.AddScoped<IElementorService, ElementorService>();
+builder.Services.AddScoped<IBlogService, BlogService>();
+builder.Services.AddScoped<IFeaturedService, FeaturedService>();
 
 
 
