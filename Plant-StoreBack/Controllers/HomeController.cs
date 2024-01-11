@@ -11,6 +11,7 @@ using Plant_StoreBack.ViewModels.Help;
 using Plant_StoreBack.ViewModels.Home;
 using Plant_StoreBack.ViewModels.Interested;
 using Plant_StoreBack.ViewModels.Product;
+using Plant_StoreBack.ViewModels.Testimonial;
 
 namespace Plant_StoreBack.Controllers
 {
@@ -23,13 +24,15 @@ namespace Plant_StoreBack.Controllers
         private readonly IHelpsService _helpsService;
         private readonly IInterestedService  _interestedService;
         private readonly IProductService _productService;
+        private readonly ITestimonialService _testimonialService;
         public HomeController(IBannerService bannerService,
                               IElementorService elementorService,
                               IBlogService blogService,
                               IFeaturedService featuredService,
                               IHelpsService helpsService,
                               IInterestedService interestedService,
-                              IProductService productService)
+                              IProductService productService,
+                              ITestimonialService testimonialService)
         {
              _bannerService = bannerService;
             _elementorService = elementorService; 
@@ -38,6 +41,7 @@ namespace Plant_StoreBack.Controllers
             _helpsService = helpsService;
             _interestedService = interestedService;
             _productService = productService;
+            _testimonialService = testimonialService;
         }
         public async Task<IActionResult> Index()
         {
@@ -48,6 +52,7 @@ namespace Plant_StoreBack.Controllers
             HelpVM help = await _helpsService.GetDataAsync();
             InterestedVM interested = await _interestedService.GetDataAsync();
             List<ProductVM> products = await _productService.GetAllAsync();
+            List<TestimonialVM> testimonials = await _testimonialService.GetAllAsync();
 
 
 
@@ -61,7 +66,8 @@ namespace Plant_StoreBack.Controllers
              Featured = featured,
              Help = help,
              Interested = interested,
-             Product = products
+             Product = products,
+             Testimonial = testimonials
 
             };
             return View(model);

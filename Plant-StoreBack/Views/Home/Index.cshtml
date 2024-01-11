@@ -98,152 +98,11 @@
                             </a>
                             <p>@item.CategoryName</p>
                             <h5>@item.Name</h5>
-                            <span>@item.Price</span>
+                            <span>$@item.Price</span>
                         </div>
                     </div>
 
                 }
-
-            @*<div class="col-3">
-              <div class="product-image">
-                <div class="wishlist-icon">
-                  <i class="fa-regular fa-heart wishlist-icons"></i>
-                  <i class="fa-solid fa-heart wishlist d-none"></i>
-                </div>
-                <div class="bucket-icon">
-                  <i class="fa-solid fa-basket-shopping"></i>
-                </div>
-                <a href="">
-                  <img
-                    src="~/assets/images/product/cactus2-free-img.jpg"
-                    alt=""
-                  />
-                </a>
-                <p>Cactus</p>
-                <h5>Cleistocactus</h5>
-                <span>$25.00</span>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product-image">
-                <div class="wishlist-icon">
-                  <i class="fa-regular fa-heart wishlist-icons"></i>
-                  <i class="fa-solid fa-heart wishlist d-none"></i>
-                </div>
-                <div class="bucket-icon">
-                  <i class="fa-solid fa-basket-shopping"></i>
-                </div>
-                <a href="">
-                  <img
-                    src="~/assets/images/product/plant5-free-img.jpg"
-                    alt=""
-                  />
-                </a>
-                <p>Plants</p>
-                <h5>Green Soil Lotus</h5>
-                <span>$34.00</span>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product-image">
-                <div class="wishlist-icon">
-                  <i class="fa-regular fa-heart wishlist-icons"></i>
-                  <i class="fa-solid fa-heart wishlist d-none"></i>
-                </div>
-                <div class="bucket-icon">
-                  <i class="fa-solid fa-basket-shopping"></i>
-                </div>
-                <a href="">
-                  <img
-                    src="~/assets/images/product/plant1-free-img.jpg"
-                    alt=""
-                  />
-                </a>
-                <p>Plants</p>
-                <h5>Money Plant</h5>
-                <span>$20.00</span>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product-image">
-                <div class="wishlist-icon">
-                  <i class="fa-regular fa-heart wishlist-icons"></i>
-                  <i class="fa-solid fa-heart wishlist d-none"></i>
-                </div>
-                <div class="bucket-icon">
-                  <i class="fa-solid fa-basket-shopping"></i>
-                </div>
-                <a href="">
-                  <img
-                    src="~/assets/images/product/cactus4-free-img.jpg"
-                    alt=""
-                  />
-                </a>
-                <p>Cactus</p>
-                <h5>Old Lady Cactus</h5>
-                <span>$12.00</span>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product-image">
-                <div class="wishlist-icon">
-                  <i class="fa-regular fa-heart wishlist-icons"></i>
-                  <i class="fa-solid fa-heart wishlist d-none"></i>
-                </div>
-                <div class="bucket-icon">
-                  <i class="fa-solid fa-basket-shopping"></i>
-                </div>
-                <a href="">
-                  <img
-                    src="~/assets/images/product/plant4-free-img.jpg"
-                    alt=""
-                  />
-                </a>
-                <p>Plants</p>
-                <h5>Piorro Quisquam</h5>
-                <span>$32.00</span>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product-image">
-                <div class="wishlist-icon">
-                  <i class="fa-regular fa-heart wishlist-icons"></i>
-                  <i class="fa-solid fa-heart wishlist d-none"></i>
-                </div>
-                <div class="bucket-icon">
-                  <i class="fa-solid fa-basket-shopping"></i>
-                </div>
-                <a href="">
-                  <img
-                    src="~/assets/images/product/plant6-free-img.jpg"
-                    alt=""
-                  />
-                </a>
-                <p>Plants</p>
-                <h5>Rattle Snake Tail</h5>
-                <span>$45.00</span>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="product-image">
-                <div class="wishlist-icon">
-                  <i class="fa-regular fa-heart wishlist-icons"></i>
-                  <i class="fa-solid fa-heart wishlist d-none"></i>
-                </div>
-                <div class="bucket-icon">
-                  <i class="fa-solid fa-basket-shopping"></i>
-                </div>
-                <a href="">
-                  <img
-                    src="~/assets/images/product/cactus6-free-img.jpg"
-                    alt=""
-                  />
-                </a>
-                <p>Cactus</p>
-                <h5>Star Cactus</h5>
-                <span>$30.00</span>
-              </div>
-            </div>*@
           </div>
         </div>
       </section>
@@ -298,7 +157,7 @@
                       <div class="col-6">
                         <div class="image-left">
                           <img
-                            src="~/assets/images/testimonials/user1-free-img.jpg"
+                            src="~/assets/images/testimonials/@Model.Testimonial.FirstOrDefault().Image"
                             alt=""
                           />
                         </div>
@@ -306,12 +165,10 @@
                       <div class="col-6">
                         <div class="review">
                           <p>
-                            Neque porro quisquam est, qui dolore ipsum quia
-                            dolor sit amet, consectetur adipisci velit, sed quia
-                            non numquam eius modi tempora incidunt.
+                            @Model.Testimonial.FirstOrDefault().Description
                           </p>
                           <h5>Sarah Jones</h5>
-                          <span>Interior Designer</span>
+                          <span>@Model.Testimonial.FirstOrDefault().Position</span>
                         </div>
                       </div>
                     </div>
@@ -323,53 +180,32 @@
               <div class="since">
                 <div class="container">
                   <div class="row">
-                    <div class="col-6">
-                      <div class="image-right">
-                        <img
-                          src="~/assets/images/testimonials/testimonial-2.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="review">
-                        <p>
-                          Neque porro quisquam est, qui dolore ipsum quia dolor
-                          sit amet, consectetur adipisci velit, sed quia non
-                          numquam eius modi tempora incidunt.
-                        </p>
-                        <h5>Jessica Foxx</h5>
-                        <span>Student</span>
-                      </div>
-                    </div>
+                      @foreach (var item in Model.Testimonial.Skip(1).Take(2))
+                                {
+                                    <div class="col-6">
+                                        <div class="image-right">
+                                            <img src="~/assets/images/testimonials/@item.Image"
+                                                 alt=""/>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="review">
+                                            <p>
+                                                Neque porro quisquam est, qui dolore ipsum quia dolor
+                                                sit amet, consectetur adipisci velit, sed quia non
+                                                numquam eius modi tempora incidunt.
+                                            </p>
+                                            <h5>@item.Name</h5>
+                                            <span>@item.Position</span>
+                                        </div>
+                                    </div>
+                      }
+
+
                   </div>
                 </div>
               </div>
-              <div class="since">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="image-right">
-                        <img
-                          src="~/assets/images/testimonials/user3-free-img.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="review">
-                        <p>
-                          Neque porro quisquam est, qui dolore ipsum quia dolor
-                          sit amet, consectetur adipisci velit, sed quia non
-                          numquam eius modi tempora incidunt.
-                        </p>
-                        <h5>Briana Luke</h5>
-                        <span>Student</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>

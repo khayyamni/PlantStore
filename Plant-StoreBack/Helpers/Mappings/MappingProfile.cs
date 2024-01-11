@@ -12,6 +12,7 @@ using Plant_StoreBack.ViewModels.Help;
 using Plant_StoreBack.ViewModels.Interested;
 using Plant_StoreBack.ViewModels.Category;
 using Plant_StoreBack.ViewModels.Product;
+using Plant_StoreBack.ViewModels.Testimonial;
 
 namespace Plant_StoreBack.Helpers.Mappings
 {
@@ -30,6 +31,7 @@ namespace Plant_StoreBack.Helpers.Mappings
             CreateMap<Help, HelpVM>().ReverseMap();
             CreateMap<Interested, InterestedVM>().ReverseMap();
             CreateMap<Category, CategoryVM>();
+            CreateMap<Testimonial, TestimonialVM>();
 
 
 

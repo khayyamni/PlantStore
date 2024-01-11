@@ -5,6 +5,7 @@ using Plant_StoreBack.ViewModels.Featured;
 using Plant_StoreBack.ViewModels.Help;
 using Plant_StoreBack.ViewModels.Interested;
 using Plant_StoreBack.ViewModels.Product;
+using Plant_StoreBack.ViewModels.Testimonial;
 
 namespace Plant_StoreBack.ViewModels.Home
 {
@@ -17,5 +18,6 @@ namespace Plant_StoreBack.ViewModels.Home
         public HelpVM Help { get; set; }
         public InterestedVM Interested { get; set; }
         public List<ProductVM> Product { get; set; }
+        public List<TestimonialVM> Testimonial { get; set; }
     }
 }

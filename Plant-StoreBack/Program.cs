@@ -31,6 +31,7 @@ builder.Services.AddScoped<IHelpsService, HelpService>();
 builder.Services.AddScoped<IInterestedService, InterestedService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<ITestimonialService, TestimonialService>();
 
 
 
