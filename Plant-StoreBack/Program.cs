@@ -27,6 +27,10 @@ builder.Services.AddScoped<IBannerService, BannerService>();
 builder.Services.AddScoped<IElementorService, ElementorService>();
 builder.Services.AddScoped<IBlogService, BlogService>();
 builder.Services.AddScoped<IFeaturedService, FeaturedService>();
+builder.Services.AddScoped<IHelpsService, HelpService>();
+builder.Services.AddScoped<IInterestedService, InterestedService>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 
 

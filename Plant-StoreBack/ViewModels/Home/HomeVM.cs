@@ -2,6 +2,9 @@
 using Plant_StoreBack.ViewModels.Blog;
 using Plant_StoreBack.ViewModels.Elementor;
 using Plant_StoreBack.ViewModels.Featured;
+using Plant_StoreBack.ViewModels.Help;
+using Plant_StoreBack.ViewModels.Interested;
+using Plant_StoreBack.ViewModels.Product;
 
 namespace Plant_StoreBack.ViewModels.Home
 {
@@ -11,5 +14,8 @@ namespace Plant_StoreBack.ViewModels.Home
         public List<ElementorVM> Elementors { get; set; }
         public List<BlogVM> Blogs { get; set; }
         public FeaturedVM Featured { get; set; }
+        public HelpVM Help { get; set; }
+        public InterestedVM Interested { get; set; }
+        public List<ProductVM> Product { get; set; }
     }
 }

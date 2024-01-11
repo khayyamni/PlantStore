@@ -80,27 +80,31 @@
       <section id="product">
         <div class="container">
           <div class="row">
-            <div class="col-3">
-              <div class="product-image">
-                <div class="wishlist-icon">
-                  <i class="fa-regular fa-heart wishlist-icons"></i>
-                  <i class="fa-solid fa-heart wishlist d-none"></i>
-                </div>
-                <div class="bucket-icon">
-                  <i class="fa-solid fa-basket-shopping"></i>
-                </div>
-                <a href="productdetail.html">
-                  <img
-                    src="~/assets/images/product/plant3-free-img.jpg"
-                    alt=""
-                  />
-                </a>
-                <p>Plants</p>
-                <h5>Boncellensis Secullant</h5>
-                <span>$34.00</span>
-              </div>
-            </div>
-            <div class="col-3">
+
+              @foreach (var item in Model.Product)
+                {
+                    <div class="col-3">
+                        <div class="product-image">
+                            <div class="wishlist-icon">
+                                <i class="fa-regular fa-heart wishlist-icons"></i>
+                                <i class="fa-solid fa-heart wishlist d-none"></i>
+                            </div>
+                            <div class="bucket-icon">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </div>
+                            <a href="productdetail.html">
+                                <img src="~/assets/images/product/@item.Image"
+                                     alt="" />
+                            </a>
+                            <p>@item.CategoryName</p>
+                            <h5>@item.Name</h5>
+                            <span>@item.Price</span>
+                        </div>
+                    </div>
+
+                }
+
+            @*<div class="col-3">
               <div class="product-image">
                 <div class="wishlist-icon">
                   <i class="fa-regular fa-heart wishlist-icons"></i>
@@ -239,7 +243,7 @@
                 <h5>Star Cactus</h5>
                 <span>$30.00</span>
               </div>
-            </div>
+            </div>*@
           </div>
         </div>
       </section>
@@ -252,7 +256,7 @@
           <div class="row">
             <div class="col-4">
               <div class="help-title">
-                <h4>Need help in choosing the right plants?</h4>
+                <h4>@Model.Help.Title</h4>
                 <a href="">
                   <div class="contact">
                     <i class="fa-solid fa-phone-flip"></i>
@@ -265,15 +269,10 @@
             <div class="col-8">
               <div class="help-text">
                 <p>
-                  Commodo sociosqu venenatis cras dolor sagittis integer luctus
-                  sem primis eget maecenas sedurna malesuada consectetuer.
+                    @Model.Help.Desc1
                 </p>
                 <p>
-                  Ornare integer commodo mauris et ligula purus, praesent
-                  cubilia laboriosam viverra. Mattis id rhoncus. Integer lacus
-                  eu volutpat fusce. Elit etiam phasellus suscipit suscipit
-                  dapibus, condimentum tempor quis, turpis luctus dolor sapien
-                  vivamus.
+                    @Model.Help.Desc2
                 </p>
               </div>
             </div>
@@ -381,17 +380,15 @@
       <section id="interested">
         <div class="interested-desc">
           <div class="interested-wright">
-            <h2>Interested? Shop This Plant Collection!</h2>
+            <h2>@Model.Interested.Title</h2>
             <p>
-              Neque porro quisquam est, qui dolore ipsum quia dolor sit amet,
-              consectetur adipisci velit, sed quia non numquam eius modi tempora
-              incidunt.
+               @Model.Interested.Description
             </p>
             <button type="button" class="btn btn-danger">Go To Shop</button>
           </div>
           <div
             class="background"
-            style="background-image: url(/assets/images/CTA-bg.jpg)"
+            style="background-image: url(/assets/images/@Model.Interested.Image)"
           ></div>
         </div>
       </section>
