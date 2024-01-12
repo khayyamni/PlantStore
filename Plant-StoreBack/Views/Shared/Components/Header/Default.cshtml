@@ -1,0 +1,70 @@
+﻿@model HeaderVM
+@{
+    ViewData["Title"] = "Default";
+}
+
+
+
+<header class="mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="natural">
+                    <div class="image">
+                        <a href="home.html">
+                            <img src="./assets/images/@Model.Logo"
+                                 alt="" />
+                        </a>
+                    </div>
+                    <div class="name">
+                        <a href="">Simply Natural</a>
+                    </div>
+                    <div class="search-icon">
+                        <input type="text" placeholder="Search Anything..." />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="navigation">
+                    <div>
+                        <a href="">Home</a>
+                    </div>
+
+                    <div class="store">
+                        <a href="shop.html">Shop</a>
+                        <!-- <div class="sub-menu">
+                          <a href="">Plants</a>
+                          <a href="">Cactus</a>
+                        </div> -->
+                    </div>
+
+                    <div>
+                        <a href="about.html">About Us</a>
+                    </div>
+                    <div>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                    <div class="account ">
+                        <a href="account.html">My Account</a>
+                        <!-- <div class="login">
+                          <a href="">Login</a>
+                          <a href="">Register</a>
+                        </div> -->
+                    </div>
+                    <div class="button d-none">
+                        <button type="button" class="btn btn-danger">Logout</button>
+                    </div>
+                    <div class="icon d-flex">
+                        <div class="basket">
+                            <a href="basket.html">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span>0</span>
+                            </a>
+                        </div>
+                        <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
