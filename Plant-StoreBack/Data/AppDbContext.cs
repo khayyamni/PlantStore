@@ -22,6 +22,9 @@ namespace Plant_StoreBack.Data
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<Team> Teams { get; set; }
+        public DbSet<Company> Companies { get; set; }
+        public DbSet<About> Abouts { get; set; }
 
 
 
@@ -39,6 +42,9 @@ namespace Plant_StoreBack.Data
             modelBuilder.Entity<Category>().HasQueryFilter(m => !m.SoftDeleted);
             modelBuilder.Entity<ProductImage>().HasQueryFilter(m => !m.SoftDeleted);
             modelBuilder.Entity<Testimonial>().HasQueryFilter(m => !m.SoftDeleted);
+            modelBuilder.Entity<Team>().HasQueryFilter(m => !m.SoftDeleted);
+            modelBuilder.Entity<Company>().HasQueryFilter(m => !m.SoftDeleted);
+            modelBuilder.Entity<About>().HasQueryFilter(m => !m.SoftDeleted);
         }
 
     }

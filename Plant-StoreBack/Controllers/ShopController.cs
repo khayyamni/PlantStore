@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Plant_StoreBack.Data;
 using Plant_StoreBack.Models;
@@ -11,11 +12,14 @@ namespace Plant_StoreBack.Controllers
     {
         private readonly AppDbContext _context;
         private readonly IProductService _productService;
+        private readonly UserManager<AppUser> _userManager;
 
-        public ShopController(AppDbContext context, IProductService productService)
+
+        public ShopController(AppDbContext context, IProductService productService,UserManager<AppUser> userManager)
         {
             _context = context;
             _productService = productService;
+            _userManager = userManager;
         }
 
 
@@ -30,5 +34,7 @@ namespace Plant_StoreBack.Controllers
 
             return View(products);
         }
+
+
     }
 }

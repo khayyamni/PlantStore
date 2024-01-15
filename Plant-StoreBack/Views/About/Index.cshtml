@@ -1,4 +1,6 @@
 ﻿
+@model AboutPageVM
+
 @{
     ViewData["Title"] = "Index";
 }
@@ -25,12 +27,12 @@
             <div class="desc">
                 <div class="row">
                     <div class="col-lg-4">
-                        <h3>We Work Hard To Provide You The Best Quality Plants And Succulents</h3>
+                        <h3>@Model.About.Title</h3>
                     </div>
                     <div class="col-lg-8">
                         <div class="desc-right">
                             <div class="desc-text">
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+                                <p>@Model.About.Description</p>
                             </div>
                             <div class="desc-button">
                                 <button type="button" class="btn btn-danger">Read More</button>
@@ -50,24 +52,22 @@
         <div class="container">
             <div class="company">
                 <div class="company-wright">
-                    <h2>Our Company</h2>
-                    <p>
-                        I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo, when an unknown printer took a galley.
-                    </p>
+                    <h2>@Model.Company.Title</h2>
+                    <p>@Model.Company.Desc</p>
                 </div>
                 <div class="image">
-                    <img src="~/assets/images/about-page/company/bg4-free-img.jpg" alt="">
+                    <img src="~/assets/images/about-page/company/@Model.Company.Image" alt="">
                 </div>
                 <div class="company-desc">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="pp">
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors</p>
+                                <p>@Model.Company.DescLeft</p>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="p">
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. </p>
+                                <p>@Model.Company.DescRight</p>
                             </div>
                         </div>
                     </div>
@@ -82,74 +82,36 @@
         <div class="container">
             <div class="team">
                 <div class="team-wright">
-                    <h2>Our Company</h2>
-                    <p>
-                        I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo, when an unknown printer took a galley.
-                    </p>
+                    <h2>@Model.Company.Title</h2>
+                    <p>@Model.Company.Desc</p>
                 </div>
             </div>
             <div class="co-founder">
                 <div class="row">
-                    <div class="col-lg-4">
-                        <div class="image">
-                            <img src="~/assets/images/about-page/blog/teammate-1.png" alt="">
-                        </div>
-                        <div class="text">
-                            <h4>Bryan Joes</h4>
-                            <p>Co-Founder</p>
-                            <div class="hr">
-                                <div class="hr-red">
-                                    <hr>
+                    @foreach (var item in Model.Teams)
+                    {
+                        <div class="col-lg-4">
+                            <div class="image">
+                                <img src="~/assets/images/about-page/blog/@item.Image" alt="">
+                            </div>
+                            <div class="text">
+                                <h4>@item.FullName</h4>
+                                <p>@item.Position</p>
+                                <div class="hr">
+                                    <div class="hr-red">
+                                        <hr>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="social">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="image">
-                            <img src="~/assets/images/about-page/blog/teammate-2.png" alt="">
-                        </div>
-                        <div class="text">
-                            <h4>Bryan Joes</h4>
-                            <p>Co-Founder</p>
-                            <div class="hr">
-                                <div class="hr-red">
-                                    <hr>
-                                </div>
+                            <div class="social">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-facebook-f"></i>
                             </div>
                         </div>
-                        <div class="social">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="image">
-                            <img src="~/assets/images/about-page/blog/teammate-3-1.png" alt="">
-                        </div>
-                        <div class="text">
-                            <h4>Bryan Joes</h4>
-                            <p>Co-Founder</p>
-                            <div class="hr">
-                                <div class="hr-red">
-                                    <hr>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="social">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </div>
-                    </div>
+
+                    }
                 </div>
             </div>
 

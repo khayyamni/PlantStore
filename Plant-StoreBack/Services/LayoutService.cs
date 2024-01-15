@@ -37,16 +37,5 @@ namespace Plant_StoreBack.Services
             };
         }
 
-
-
-        public ShopVM GetShopDatas()
-        {
-            Dictionary<string, string> settingDatas = _settingsService.GetSettings();
-
-            return new ShopVM
-            {
-                Logo = settingDatas["ShopBanner"]
-            };
-        }
     }
 }

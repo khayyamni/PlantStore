@@ -33,6 +33,10 @@ builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ITestimonialService, TestimonialService>();
 builder.Services.AddScoped<ILayoutService, LayoutService>();
+builder.Services.AddScoped<IAboutService, AboutService>();
+builder.Services.AddScoped<ITeamService, TeamService>();
+builder.Services.AddScoped<ICompanyService, CompanyService>();
+
 
 
 
