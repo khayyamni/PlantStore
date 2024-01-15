@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Cors.Infrastructure;
 using Plant_StoreBack.Services.Interfaces;
 using Plant_StoreBack.ViewModels;
+using Plant_StoreBack.ViewModels.Shop;
 
 namespace Plant_StoreBack.Services
 {
@@ -33,6 +34,18 @@ namespace Plant_StoreBack.Services
             return new FooterVM
             {
                 Logo = settingDatas["FooterLogo"]
+            };
+        }
+
+
+
+        public ShopVM GetShopDatas()
+        {
+            Dictionary<string, string> settingDatas = _settingsService.GetSettings();
+
+            return new ShopVM
+            {
+                Logo = settingDatas["ShopBanner"]
             };
         }
     }

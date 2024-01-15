@@ -1,4 +1,5 @@
-﻿using Plant_StoreBack.ViewModels.Banner;
+﻿using Plant_StoreBack.Models;
+using Plant_StoreBack.ViewModels.Banner;
 using Plant_StoreBack.ViewModels.Blog;
 using Plant_StoreBack.ViewModels.Elementor;
 using Plant_StoreBack.ViewModels.Featured;
@@ -19,5 +20,6 @@ namespace Plant_StoreBack.ViewModels.Home
         public InterestedVM Interested { get; set; }
         public List<ProductVM> Product { get; set; }
         public List<TestimonialVM> Testimonial { get; set; }
+        public List<ProductImage> ProductImages { get; set; }
     }
 }

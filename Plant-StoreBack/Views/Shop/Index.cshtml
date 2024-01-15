@@ -1,6 +1,7 @@
-﻿
+﻿@model List<ProductVM>
+
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Shop Page";
 }
 
 
@@ -104,115 +105,31 @@
 
                             <div class="cards">
                                 <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="card-image">
-                                            <div class="wishlist-icon">
-                                                <i class="fa-regular fa-heart wishlist-icons"></i>
-                                                <i class="fa-solid fa-heart wishlist d-none"></i>
+                                    @foreach (var item in Model)
+                                    {
+                                        <div class="col-lg-6">
+                                            <div class="card-image">
+                                                <div class="wishlist-icon">
+                                                    <i class="fa-regular fa-heart wishlist-icons"></i>
+                                                    <i class="fa-solid fa-heart wishlist d-none"></i>
+                                                </div>
+                                                <div class="bucket-icon">
+                                                    <i class="fa-solid fa-basket-shopping"></i>
+                                                </div>
+                                                <a href="productdetail.html">
+                                                    <img src="~/assets/images/shop-page/card/@item.Image"
+                                                         alt="" />
+                                                </a>
+                                                <p>@item.CategoryName</p>
+                                                <h5>@item.Name</h5>
+                                                <span>@item.Price</span>
                                             </div>
-                                            <div class="bucket-icon">
-                                                <i class="fa-solid fa-basket-shopping"></i>
-                                            </div>
-                                            <a href="productdetail.html">
-                                                <img src="~/assets/images/shop-page/card/plants/plant2-free-img.jpg"
-                                                     alt="" />
-                                            </a>
-                                            <p>Plants</p>
-                                            <h5>Boncellensis Secullant</h5>
-                                            <span>$34.00</span>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="card-image">
-                                            <div class="wishlist-icon">
-                                                <i class="fa-regular fa-heart wishlist-icons"></i>
-                                                <i class="fa-solid fa-heart wishlist d-none"></i>
-                                            </div>
-                                            <div class="bucket-icon">
-                                                <i class="fa-solid fa-basket-shopping"></i>
-                                            </div>
-                                            <a href="">
-                                                <img src="~/assets/images/shop-page/card/catcus/cactus5-free-img.jpg"
-                                                     alt="" />
-                                            </a>
-                                            <p>Plants</p>
-                                            <h5>Boncellensis Secullant</h5>
-                                            <span>$34.00</span>
-                                        </div>
-                                    </div>
 
-                                    <div class="col-lg-6">
-                                        <div class="card-image">
-                                            <div class="wishlist-icon">
-                                                <i class="fa-regular fa-heart wishlist-icons"></i>
-                                                <i class="fa-solid fa-heart wishlist d-none"></i>
-                                            </div>
-                                            <div class="bucket-icon">
-                                                <i class="fa-solid fa-basket-shopping"></i>
-                                            </div>
-                                            <a href="">
-                                                <img src="~/assets/images/shop-page/card/plants/plant1-free-img.jpg"
-                                                     alt="" />
-                                            </a>
-                                            <p>Plants</p>
-                                            <h5>Boncellensis Secullant</h5>
-                                            <span>$34.00</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="card-image">
-                                            <div class="wishlist-icon">
-                                                <i class="fa-regular fa-heart wishlist-icons"></i>
-                                                <i class="fa-solid fa-heart wishlist d-none"></i>
-                                            </div>
-                                            <div class="bucket-icon">
-                                                <i class="fa-solid fa-basket-shopping"></i>
-                                            </div>
-                                            <a href="">
-                                                <img src="~/assets/images/shop-page/card/plants/plant4-free-img.jpg"
-                                                     alt="" />
-                                            </a>
-                                            <p>Plants</p>
-                                            <h5>Boncellensis Secullant</h5>
-                                            <span>$34.00</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="card-image">
-                                            <div class="wishlist-icon">
-                                                <i class="fa-regular fa-heart wishlist-icons"></i>
-                                                <i class="fa-solid fa-heart wishlist d-none"></i>
-                                            </div>
-                                            <div class="bucket-icon">
-                                                <i class="fa-solid fa-basket-shopping"></i>
-                                            </div>
-                                            <a href="">
-                                                <img src="~/assets/images/shop-page/card//catcus/cactus3-free-img.jpg"
-                                                     alt="" />
-                                            </a>
-                                            <p>Plants</p>
-                                            <h5>Boncellensis Secullant</h5>
-                                            <span>$34.00</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="card-image">
-                                            <div class="wishlist-icon">
-                                                <i class="fa-regular fa-heart wishlist-icons"></i>
-                                                <i class="fa-solid fa-heart wishlist d-none"></i>
-                                            </div>
-                                            <div class="bucket-icon">
-                                                <i class="fa-solid fa-basket-shopping"></i>
-                                            </div>
-                                            <a href="">
-                                                <img src="~/assets/images/shop-page/card/plants/plant6-free-img.jpg"
-                                                     alt="" />
-                                            </a>
-                                            <p>Plants</p>
-                                            <h5>Boncellensis Secullant</h5>
-                                            <span>$34.00</span>
-                                        </div>
-                                    </div>
+                                    }
+                                    
+
+                                 
                                 </div>
 
 

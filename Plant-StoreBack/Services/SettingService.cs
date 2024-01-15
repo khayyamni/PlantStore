@@ -24,6 +24,9 @@ namespace Plant_StoreBack.Services
         }
 
 
+
+
+
         public Dictionary<string, string> GetSettings()
         {
             return _context.Settings.Where(m => !m.SoftDeleted)

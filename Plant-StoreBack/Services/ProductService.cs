@@ -27,5 +27,28 @@ namespace Plant_StoreBack.Services
         public async Task<Product> GetByIdAsync(int id) => await _context.Products.Include(m => m.Category).Include(m => m.Images).FirstOrDefaultAsync(m => m.Id == id);
 
 
+
+         public async Task<List<ProductVM>> GetAllWithImagesByTakeAsync(int take)
+        {
+           return _mapper.Map<List<ProductVM>>(await _context.Products.Include(m => m.Images).Include(m=>m.Category).Take(take).ToListAsync());
+
+        }
+
+
+
+        public async Task<Product> GetByIdWithIncludesAsync(int id)
+        {
+            return await _context.Products
+                           .Where(m => m.Id == id)
+                           .Include(m => m.Images)
+                           .Include(m => m.Category)
+                           .FirstOrDefaultAsync();
+        }
+
+        public async Task<int> GetCountAsync()
+        {
+            return await _context.Products.CountAsync();
+        }
+
     }
 }

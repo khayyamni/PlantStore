@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vbf8iIMm8ADM7nczc6J2FElkXJBd9/ht0Kd7UfiE2Is=",
+  "Hash": "fZVc2blTV5zz7ZfiVNxjIL+yzsnh9f7eklEWXK8kAtI=",
   "Source": "Plant-StoreBack",
   "BasePath": "_content/Plant-StoreBack",
   "Mode": "Default",
@@ -680,6 +680,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\cactus2-free-img.jpg"
     },
     {
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\cactus3-free-img.jpg",
+      "SourceId": "Plant-StoreBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\",
+      "BasePath": "_content/Plant-StoreBack",
+      "RelativePath": "assets/images/product/cactus3-free-img.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\product\\cactus3-free-img.jpg"
+    },
+    {
       "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\cactus4-free-img.jpg",
       "SourceId": "Plant-StoreBack",
       "SourceType": "Discovered",
@@ -695,6 +712,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\cactus4-free-img.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\cactus5-free-img.jpg",
+      "SourceId": "Plant-StoreBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\",
+      "BasePath": "_content/Plant-StoreBack",
+      "RelativePath": "assets/images/product/cactus5-free-img.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\product\\cactus5-free-img.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\cactus6-free-img.jpg",
@@ -816,12 +850,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\product\\product-detail\\cactus2-free-img.jpg"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\catcus\\cactus3-free-img.jpg",
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\cactus3-free-img.jpg",
       "SourceId": "Plant-StoreBack",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\",
       "BasePath": "_content/Plant-StoreBack",
-      "RelativePath": "assets/images/shop-page/card/catcus/cactus3-free-img.jpg",
+      "RelativePath": "assets/images/shop-page/card/cactus3-free-img.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -830,15 +864,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\shop-page\\card\\catcus\\cactus3-free-img.jpg"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\shop-page\\card\\cactus3-free-img.jpg"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\catcus\\cactus5-free-img.jpg",
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\cactus5-free-img.jpg",
       "SourceId": "Plant-StoreBack",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\",
       "BasePath": "_content/Plant-StoreBack",
-      "RelativePath": "assets/images/shop-page/card/catcus/cactus5-free-img.jpg",
+      "RelativePath": "assets/images/shop-page/card/cactus5-free-img.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -847,15 +881,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\shop-page\\card\\catcus\\cactus5-free-img.jpg"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\shop-page\\card\\cactus5-free-img.jpg"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plants\\plant1-free-img.jpg",
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plant1-free-img.jpg",
       "SourceId": "Plant-StoreBack",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\",
       "BasePath": "_content/Plant-StoreBack",
-      "RelativePath": "assets/images/shop-page/card/plants/plant1-free-img.jpg",
+      "RelativePath": "assets/images/shop-page/card/plant1-free-img.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -864,15 +898,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\shop-page\\card\\plants\\plant1-free-img.jpg"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\shop-page\\card\\plant1-free-img.jpg"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plants\\plant2-free-img.jpg",
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plant2-free-img.jpg",
       "SourceId": "Plant-StoreBack",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\",
       "BasePath": "_content/Plant-StoreBack",
-      "RelativePath": "assets/images/shop-page/card/plants/plant2-free-img.jpg",
+      "RelativePath": "assets/images/shop-page/card/plant2-free-img.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -881,15 +915,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\shop-page\\card\\plants\\plant2-free-img.jpg"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\shop-page\\card\\plant2-free-img.jpg"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plants\\plant3-free-img.jpg",
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plant3-free-img.jpg",
       "SourceId": "Plant-StoreBack",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\",
       "BasePath": "_content/Plant-StoreBack",
-      "RelativePath": "assets/images/shop-page/card/plants/plant3-free-img.jpg",
+      "RelativePath": "assets/images/shop-page/card/plant3-free-img.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -898,15 +932,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\shop-page\\card\\plants\\plant3-free-img.jpg"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\shop-page\\card\\plant3-free-img.jpg"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plants\\plant4-free-img.jpg",
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plant4-free-img.jpg",
       "SourceId": "Plant-StoreBack",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\",
       "BasePath": "_content/Plant-StoreBack",
-      "RelativePath": "assets/images/shop-page/card/plants/plant4-free-img.jpg",
+      "RelativePath": "assets/images/shop-page/card/plant4-free-img.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -915,15 +949,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\shop-page\\card\\plants\\plant4-free-img.jpg"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\shop-page\\card\\plant4-free-img.jpg"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plants\\plant5-free-img.jpg",
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plant5-free-img.jpg",
       "SourceId": "Plant-StoreBack",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\",
       "BasePath": "_content/Plant-StoreBack",
-      "RelativePath": "assets/images/shop-page/card/plants/plant5-free-img.jpg",
+      "RelativePath": "assets/images/shop-page/card/plant5-free-img.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -932,15 +966,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\shop-page\\card\\plants\\plant5-free-img.jpg"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\shop-page\\card\\plant5-free-img.jpg"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plants\\plant6-free-img.jpg",
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plant6-free-img.jpg",
       "SourceId": "Plant-StoreBack",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\",
       "BasePath": "_content/Plant-StoreBack",
-      "RelativePath": "assets/images/shop-page/card/plants/plant6-free-img.jpg",
+      "RelativePath": "assets/images/shop-page/card/plant6-free-img.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -949,7 +983,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\shop-page\\card\\plants\\plant6-free-img.jpg"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\shop-page\\card\\plant6-free-img.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\store-bg.jpg",
