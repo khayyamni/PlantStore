@@ -17,7 +17,6 @@
         <div class="banner-wright">
             <h1>About Us</h1>
         </div>
-        </div>
     </section>
     <!-- section banner end -->
     <!-- section description start -->
@@ -122,16 +121,12 @@
     <section id="interested">
         <div class="interested-desc">
             <div class="interested-wright">
-                <h2>Interested? Shop This Plant Collection!</h2>
-                <p>
-                    Neque porro quisquam est, qui dolore ipsum quia dolor sit amet,
-                    consectetur adipisci velit, sed quia non numquam eius modi tempora
-                    incidunt.
-                </p>
+                <h2>@Model.Interested.Title</h2>
+                <p>@Model.Interested.Description</p>
                 <button type="button" class="btn btn-danger">Go To Shop</button>
             </div>
             <div class="background"
-                 style="background-image: url(/assets/images/CTA-bg.jpg)"></div>
+                 style="background-image: url(/assets/images/@Model.Interested.Image)"></div>
         </div>
     </section>
     <!-- section interested end -->

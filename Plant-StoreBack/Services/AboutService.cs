@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Plant_StoreBack.Data;
-using Plant_StoreBack.Models;
 using Plant_StoreBack.Services.Interfaces;
 using Plant_StoreBack.ViewModels.About;
 

@@ -38,10 +38,5 @@ namespace Plant_StoreBack.Services
         {
             return await _context.Settings.FirstOrDefaultAsync(m => m.Id == id);
         }
-
-        //public Dictionary<string, string> GetSettings()
-        //{
-        //    return _context.Settings.AsEnumerable().ToDictionary(m => m.Key, m => m.Value);
-        //}
     }
 }

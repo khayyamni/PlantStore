@@ -1,4 +1,4 @@
-﻿
+﻿@model ContactPageVM
 @{
     ViewData["Title"] = "Index";
 }
@@ -18,10 +18,9 @@
       id="banner"
       style="background-image: url(/assets/images/contact-bg.jpg)"
     >
-      <div class="banner-wright">
-        <h1>Contact Us</h1>
-        </div>
-      </div>
+       <div class="banner-wright">
+          <h1>Contact Us</h1>
+       </div>
     </section>
 
 
@@ -41,19 +40,14 @@
                     <div class="location">
                       <i class="fa-solid fa-location-dot"></i>
                       <h4>Our Location</h4>
-                    <p>
-                      1569 2nd Ave, New York,
-                      <br>
-                      NY 10028, USA​
-                    </p>
-                    
+                      <p style="width: 65%;">@Model.Contact.Address</p>
                     </div>
                     
                     <div class="call">
                       <i class="fa-solid fa-phone-flip"></i>
                       <h4>Call Us</h4>
-                      <p>+123 456 7890</p>
-                      <p>+123 456 7891</p>
+                      <p>@Model.Contact.Phone1</p>
+                      <p>@Model.Contact.Phone2</p>
                     </div>
                   </div>
                 
@@ -62,11 +56,7 @@
                   <div class="email">
                     <i class="fa-solid fa-envelope"></i>  
                     <h4>Our Email</h4>
-                    <p>
-                      1569 2nd Ave, New York,
-                      <br>
-                      NY 10028, USA​
-                    </p>
+                    <p>@Model.Contact.Email</p>
                   </div>
                   
                   <hr>

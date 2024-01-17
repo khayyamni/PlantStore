@@ -25,6 +25,8 @@ namespace Plant_StoreBack.Data
         public DbSet<Team> Teams { get; set; }
         public DbSet<Company> Companies { get; set; }
         public DbSet<About> Abouts { get; set; }
+        public DbSet<ContactMessage> ContactMessages { get; set; }
+
 
 
 
@@ -45,6 +47,7 @@ namespace Plant_StoreBack.Data
             modelBuilder.Entity<Team>().HasQueryFilter(m => !m.SoftDeleted);
             modelBuilder.Entity<Company>().HasQueryFilter(m => !m.SoftDeleted);
             modelBuilder.Entity<About>().HasQueryFilter(m => !m.SoftDeleted);
+            modelBuilder.Entity<ContactMessage>().HasQueryFilter(m => !m.SoftDeleted);
         }
 
     }

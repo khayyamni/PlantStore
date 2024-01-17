@@ -1,6 +1,6 @@
 ﻿using Plant_StoreBack.ViewModels.Company;
+using Plant_StoreBack.ViewModels.Interested;
 using Plant_StoreBack.ViewModels.Team;
-using System;
 
 namespace Plant_StoreBack.ViewModels.About
 {
@@ -9,5 +9,7 @@ namespace Plant_StoreBack.ViewModels.About
         public AboutVM About { get; set; }
         public List<TeamVM> Teams { get; set; }
         public CompanyVM Company { get; set; }
+        public InterestedVM Interested { get; set; }
+
     }
 }
