@@ -15,7 +15,9 @@ namespace Plant_StoreBack.Controllers
         private readonly UserManager<AppUser> _userManager;
 
 
-        public ShopController(AppDbContext context, IProductService productService,UserManager<AppUser> userManager)
+        public ShopController(AppDbContext context, 
+                              IProductService productService,
+                              UserManager<AppUser> userManager)
         {
             _context = context;
             _productService = productService;
@@ -35,6 +37,13 @@ namespace Plant_StoreBack.Controllers
             return View(products);
         }
 
+        public async Task <IActionResult> ProductDetails(int? id) 
+        {
+            if (id is null) return BadRequest();
+            ProductVM product = await _productService.GetByIdAsync((int)id);
+            if(product == null) return NotFound();
+            return View(product);
+        }
 
     }
 }

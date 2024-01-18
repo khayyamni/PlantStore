@@ -24,8 +24,11 @@ namespace Plant_StoreBack.Services
             return _mapper.Map<List<ProductVM>>(await _context.Products.Include(m => m.Category).Include(m => m.Images).ToListAsync());
         }
 
-        public async Task<Product> GetByIdAsync(int id) => await _context.Products.Include(m => m.Category).Include(m => m.Images).FirstOrDefaultAsync(m => m.Id == id);
-
+        public async Task<ProductVM> GetByIdAsync(int id)
+        {
+            var data = await _context.Products.Include(m => m.Category).Include(m => m.Images).FirstOrDefaultAsync(m => m.Id == id);
+            return _mapper.Map<ProductVM>(data);       
+        }
 
 
          public async Task<List<ProductVM>> GetAllWithImagesByTakeAsync(int take)
