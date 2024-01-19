@@ -13,6 +13,7 @@ namespace Plant_StoreBack.Services.Interfaces
         Task<Product> GetByIdWithIncludesAsync(int id);
         Task<int> GetCountAsync();
 
+        Task<List<ProductVM>> GetByCategoryAsync(int id);
 
 
     }

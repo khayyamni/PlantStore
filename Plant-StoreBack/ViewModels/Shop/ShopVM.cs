@@ -6,6 +6,6 @@ namespace Plant_StoreBack.ViewModels.Shop
     public class ShopVM
     {
         public List<ProductVM> Product { get; set; }
-        public CategoryVM Category { get; set; }
+        public List<CategoryVM> Category { get; set; }
     }
 }

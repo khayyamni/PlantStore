@@ -30,8 +30,12 @@ namespace Plant_StoreBack.Services
             return _mapper.Map<ProductVM>(data);       
         }
 
+        public async Task<List<ProductVM>> GetByCategoryAsync(int id)
+        {
+            return _mapper.Map<List<ProductVM>>(await _context.Products.Where(m => m.CategoryId == id).Include(m=>m.Category).Include(m=>m.Images).ToListAsync());
+        }
 
-         public async Task<List<ProductVM>> GetAllWithImagesByTakeAsync(int take)
+        public async Task<List<ProductVM>> GetAllWithImagesByTakeAsync(int take)
         {
            return _mapper.Map<List<ProductVM>>(await _context.Products.Include(m => m.Images).Include(m=>m.Category).Take(take).ToListAsync());
 
@@ -52,6 +56,7 @@ namespace Plant_StoreBack.Services
         {
             return await _context.Products.CountAsync();
         }
+
 
     }
 }
