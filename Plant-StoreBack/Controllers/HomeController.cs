@@ -51,7 +51,7 @@ namespace Plant_StoreBack.Controllers
             FeaturedVM featured = await _featuredService.GetDataAsync();
             HelpVM help = await _helpsService.GetDataAsync();
             InterestedVM interested = await _interestedService.GetDataAsync();
-            List<ProductVM> products = await _productService.GetAllAsync();
+            List<ProductVM> products = await _productService.GetAllWithImagesByTakeAsync(8);
             List<TestimonialVM> testimonials = await _testimonialService.GetAllAsync();
 
 

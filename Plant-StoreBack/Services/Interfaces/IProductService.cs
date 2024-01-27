@@ -16,5 +16,11 @@ namespace Plant_StoreBack.Services.Interfaces
         Task<List<ProductVM>> GetByCategoryAsync(int id);
 
 
+        Task<List<ProductVM>> OrderByNameAsc();
+        Task<List<ProductVM>> OrderByNameDesc();
+        Task<List<ProductVM>> OrderByPriceAsc();
+        Task<List<ProductVM>> OrderByPriceDesc();
+        Task<List<ProductVM>> FilterAsync(int value1, int value2);
+        Task<List<ProductVM>> SearchAsync(string searchText);
     }
 }

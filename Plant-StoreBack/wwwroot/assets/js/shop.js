@@ -68,31 +68,59 @@ $(function (){
       //filter end
 
 
-    //Sort
-  $(document).on("click", ".item0", function () {
-    let usdText = $(".item0").text();
-    $(".button-dropdown").text(usdText)
-  })
+ 
 
-  $(document).on("click", ".item1", function () {
-    let usdText = $(".item1").text();
-    $(".button-dropdown").text(usdText)
-  })
+    // Sort
 
-  $(document).on("click", ".item2", function () {
-    let usdText = $(".item2").eq(0).text();
-    $(".button-dropdown").text(usdText)
-  })
+    $(document).on("change", "#sort", function (e) {
+        e.preventDefault();
 
-  $(document).on("click", ".item3", function () {
-    let usdText = $(".item3").text();
-    $(".button-dropdown").text(usdText)
-  })
+        let sortValue = $(this).val();
 
-  $(document).on("click", ".item4", function () {
-    let usdText = $(".item4").text();
-    $(".button-dropdown").text(usdText)
-  })
+        let url = `/Shop/Sort?sortValue=${sortValue}`;  
+
+        window.location.assign(url);
+
+
+    });
+
+
+    
+
+
+
+
+    // Filter
+
+    $(document).on("click", "#filterForm", function (e) {
+        e.preventDefault();
+        let value1 = $(".min-price").val();
+        let value2 = $(".max-price").val();
+        let data = { value1: value1, value2: value2 }
+        let parent = $(".product-list");
+
+        $.ajax({
+            url: "/Shop/Filter",
+            type: "Get",
+            data: data,
+            success: function (res) {
+                $(parent).html(res);
+
+            }
+        })
+
+        let count = $(".product-count .count");
+        $.ajax({
+            url: "/Shop/FilterCount",
+            type: "Get",
+            data: data,
+            success: function (res) {
+                count.text(res);
+            }
+        })
+    })
+
+
 
 
 })

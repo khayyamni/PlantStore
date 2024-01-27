@@ -6,7 +6,7 @@ namespace Plant_StoreBack.Services.Interfaces
     public interface IContactService
     {
 
-        Task<ContactVM> GetData();
+        ContactVM GetData();
         Task<List<ContactMessageVM>> GetAllMessagesAsync();
         Task<ContactMessageVM> GetMessageByIdAsync(int id);
 

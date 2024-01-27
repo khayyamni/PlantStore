@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Plant_StoreBack.Data;
 using Plant_StoreBack.Models;
@@ -58,5 +59,54 @@ namespace Plant_StoreBack.Services
         }
 
 
+
+        public async Task<List<ProductVM>> OrderByNameAsc()
+        {
+            var dbProducts = await _context.Products.Include(m => m.Images)
+                                                                            .OrderBy(p => p.Name)
+                                                                            .ToListAsync();
+            return _mapper.Map<List<ProductVM>>(dbProducts);
+        }
+
+        public async Task<List<ProductVM>> OrderByNameDesc()
+        {
+            var dbProducts = await _context.Products.Include(m => m.Images)
+                                                                            .OrderByDescending(p => p.Name)
+                                                                            .ToListAsync();
+            return _mapper.Map<List<ProductVM>>(dbProducts);
+        }
+
+        public async Task<List<ProductVM>> OrderByPriceAsc()
+        {
+            var dbProducts = await _context.Products.Include(m => m.Images)
+                                                                            .OrderBy(p => p.Price)
+                                                                            .ToListAsync();
+            return _mapper.Map<List<ProductVM>>(dbProducts);
+        }
+
+        public async Task<List<ProductVM>> OrderByPriceDesc()
+        {
+            var dbProducts = await _context.Products.Include(m => m.Images)
+                                                                            .OrderByDescending(p => p.Price)
+                                                                            .ToListAsync();
+            return _mapper.Map<List<ProductVM>>(dbProducts);
+        }
+
+        public async Task<List<ProductVM>> FilterAsync(int value1, int value2)
+        {
+            List<Product> products = await _context.Products.Include(m => m.Images).Where(x => x.Price >= value1 && x.Price <= value2).ToListAsync();
+            return _mapper.Map<List<ProductVM>>(products);
+        }
+
+        public async Task<List<ProductVM>> SearchAsync(string searchText)
+        {
+            var dbProducts = await _context.Products.Include(m => m.Images)
+                                                 .Include(m => m.Category)
+                                                 .OrderByDescending(m => m.Id)
+                                                 .Where(m => m.Name.ToLower().Trim().Contains(searchText.ToLower().Trim()))
+                                                 .ToListAsync();
+
+            return _mapper.Map<List<ProductVM>>(dbProducts);
+        }
     }
 }

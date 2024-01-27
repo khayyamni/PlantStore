@@ -22,7 +22,7 @@ namespace Plant_StoreBack.Services
             _mapper = mapper;
             _settingService = settingService;
         }
-        public async Task<ContactVM> GetData()
+        public  ContactVM GetData()
         {
             
             Dictionary<string, string> settingDatas = _settingService.GetSettings();

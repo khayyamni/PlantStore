@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Plant_StoreBack.Data;
 using Plant_StoreBack.Models;
+using Plant_StoreBack.Services;
 using Plant_StoreBack.Services.Interfaces;
 using Plant_StoreBack.ViewModels.Category;
 using Plant_StoreBack.ViewModels.Product;
@@ -16,17 +17,20 @@ namespace Plant_StoreBack.Controllers
         private readonly IProductService _productService;
         private readonly ICategoryService _categoryService;
         private readonly UserManager<AppUser> _userManager;
+        private readonly ISettingsService _settingService;
 
 
         public ShopController(AppDbContext context, 
                               IProductService productService,
                               ICategoryService categoryService,
-                              UserManager<AppUser> userManager)
+                              UserManager<AppUser> userManager,
+                              ISettingsService settingService)
         {
             _context = context;
             _productService = productService;
             _userManager = userManager;
             _categoryService = categoryService;
+            _settingService = settingService;
         }
 
 
@@ -75,6 +79,92 @@ namespace Plant_StoreBack.Controllers
 
             return View(model);
         }
+
+
+
+
+
+        public async Task<IActionResult> Filter(int value1, int value2)
+        {
+
+            List<ProductVM> productsByFilter = await _productService.FilterAsync(value1, value2);
+            return PartialView("_ProductsPartial", productsByFilter);
+
+        }
+
+
+
+        public async Task<IActionResult> Sort(string sortValue)
+        {
+            List<ProductVM> products = new();
+
+            if (sortValue == "1")
+            {
+                return RedirectToAction(nameof(Index));
+            };
+            if (sortValue == "2")
+            {
+                products = await _productService.OrderByPriceAsc();
+
+            };
+            if (sortValue == "3")
+            {
+                products = await _productService.OrderByPriceDesc();
+
+            };
+            if (sortValue == "4")
+            {
+                products = await _productService.OrderByNameAsc();
+
+            };
+
+            if (sortValue == "5")
+            {
+                products = await _productService.OrderByNameDesc();
+
+            };
+
+            List<CategoryVM> categories = await _categoryService.GetAllAsync();
+
+            int count = await _productService.GetCountAsync();
+
+            ShopVM model = new()
+            {
+               Product= products,
+                Category = categories
+               
+            };
+            return View(model);
+        }
+
+
+
+
+        public async Task<IActionResult> Search(string searchText)
+        {
+
+            if (searchText == null)
+            {
+                return RedirectToAction("Index", "Shop");
+            }
+
+            List<CategoryVM> categories = await _categoryService.GetAllAsync();
+
+            List<ProductVM> products = await _productService.SearchAsync(searchText);
+
+            Dictionary<string, string> shopBanner = _settingService.GetSettings();
+
+            ShopVM model = new()
+            {
+                Category = categories,
+                Product = products
+
+            };
+
+            return View(model);
+        }
+
+
 
     }
 }

@@ -1,9 +1,7 @@
 ﻿@model ShopVM
-
 @{
-    ViewData["Title"] = "Shop Page";
+    ViewData["Title"] = "Sort";
 }
-
 
 @section css{
     <link rel="stylesheet" href="~/assets/css/shop.css" />
@@ -105,7 +103,7 @@
                                 </div>
                             </div>
                             <div class="cards">
-                                <div class="row product-list">
+                              <div class="row product-list">
                                     <partial name="_ProductsPartial" model="@Model.Product" />
                                 </div>
                             </div>
@@ -126,4 +124,3 @@
     }
 
 </main>
-

@@ -14,9 +14,9 @@ namespace Plant_StoreBack.Controllers
             _settingService = settingService;
             _contactService = contactService;
         }
-        public async Task<IActionResult> Index()
+        public  IActionResult Index()
         {
-            ContactVM contact = await _contactService.GetData();
+            ContactVM contact = _contactService.GetData();
 
             ContactPageVM model = new()
             {
