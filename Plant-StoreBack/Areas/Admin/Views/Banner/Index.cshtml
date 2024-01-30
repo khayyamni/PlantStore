@@ -1,0 +1,66 @@
+﻿@model BannerVM
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="container my-5">
+	<h1 class="text-center mt-3 mb-3">Feature</h1>
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>
+						Image
+					</th>
+					<th>
+						Title
+					</th>
+					<th>
+						Description
+					</th>
+					<th>
+						Create Date
+					</th>
+					<th>
+						Operations
+					</th>
+
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr data-id="">
+					<td class="py-1">
+						<img src="~/assets/images/@Model.Image" style="width:80%;height:100px;border-radius:0" alt="image" />
+					</td>
+					<td>
+						@Model.Title
+					</td>
+				
+					
+					<td style="white-space:normal">
+						@Model.Desc
+					</td>
+					<td>
+						@Model.CreateTime.ToString("dd/MM/yyyy")
+					</td>
+
+					<td>
+						<a class="btn btn-outline-info" asp-action="Detail" asp-route-id="@Model.Id">Detail</a>
+						<a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+
+					</td>
+
+				</tr>
+
+
+
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+

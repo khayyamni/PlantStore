@@ -7,5 +7,9 @@ namespace Plant_StoreBack.Services.Interfaces
     {
         Task<BannerVM> GetDataAsync();
 
+        Task<BannerVM> GetDataIdAsync(int id);
+        Task EditAsync(BannerEditVM request);
+
+
     }
 }

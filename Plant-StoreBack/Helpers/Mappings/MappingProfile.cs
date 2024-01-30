@@ -38,6 +38,8 @@ namespace Plant_StoreBack.Helpers.Mappings
             CreateMap<Company, CompanyVM>();
             CreateMap<ContactMessage, ContactMessageVM>().ReverseMap();
             CreateMap<ContactVM, ContactMessageVM>().ReverseMap();
+            CreateMap<BannerVM, BannerEditVM>().ReverseMap();
+            CreateMap<BannerEditVM,Banner>().ReverseMap();
 
         }
     }
