@@ -117,6 +117,10 @@
       "PackagePath": "staticwebassets\\admin\\lib\\waypoints\\waypoints.min.js"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\admin\\product.js",
+      "PackagePath": "staticwebassets\\admin\\product.js"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\admin\\scss\\bootstrap.scss",
       "PackagePath": "staticwebassets\\admin\\scss\\bootstrap.scss"
     },
@@ -541,12 +545,12 @@
       "PackagePath": "staticwebassets\\assets\\css\\wishlist.scss"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\06407b21-4d6b-4f05-91a6-fe3cdbcbe1ce-herobg.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\06407b21-4d6b-4f05-91a6-fe3cdbcbe1ce-herobg.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\57635ad8-eb79-43ac-845f-051965c538ea-herobg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\57635ad8-eb79-43ac-845f-051965c538ea-herobg.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\CTA-bg.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\CTA-bg.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\7ca06d23-c607-4e15-98a0-4a389fecaddc-CTA-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\7ca06d23-c607-4e15-98a0-4a389fecaddc-CTA-bg.jpg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\about-page\\about-bg.jpg",
@@ -569,16 +573,52 @@
       "PackagePath": "staticwebassets\\assets\\images\\about-page\\company\\bg4-free-img.jpg"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\blog\\0733b7c6-c20b-4c9f-a653-7085cf8db8e0-plant6-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\0733b7c6-c20b-4c9f-a653-7085cf8db8e0-plant6-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\blog\\0f075a94-e6d7-4b5c-a286-06c38526f792-CTA-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\0f075a94-e6d7-4b5c-a286-06c38526f792-CTA-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\blog\\3776c495-6520-4033-adfa-4be37a36edea-CTA-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\3776c495-6520-4033-adfa-4be37a36edea-CTA-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\blog\\37eac101-8244-44f4-a4c6-cb0005408599-contact-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\37eac101-8244-44f4-a4c6-cb0005408599-contact-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\blog\\4b2cf72c-cb6c-45c5-964b-824e30244238-herobg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\4b2cf72c-cb6c-45c5-964b-824e30244238-herobg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\blog\\53cc6b50-14c1-429b-8349-3da97fd78a2a-herobg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\53cc6b50-14c1-429b-8349-3da97fd78a2a-herobg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\blog\\53fe6d94-5c96-4d89-908b-d90343ad30de-CTA-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\53fe6d94-5c96-4d89-908b-d90343ad30de-CTA-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\blog\\c3272c04-6f40-4b84-b0a0-da9c04617afa-herobg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\c3272c04-6f40-4b84-b0a0-da9c04617afa-herobg.jpg"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\blog\\cactus2-free-img.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\blog\\cactus2-free-img.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\blog\\plant4-free-img.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\blog\\plant4-free-img.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\blog\\d2e7962c-a0ce-4122-828d-8ece08fca7a6-CTA-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\d2e7962c-a0ce-4122-828d-8ece08fca7a6-CTA-bg.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\blog\\plant6-free-img.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\blog\\plant6-free-img.jpg"
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\blog\\e8ed3416-1676-4f83-89b8-160fad63f939-herobg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\e8ed3416-1676-4f83-89b8-160fad63f939-herobg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\blog\\plant4-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\plant4-free-img.jpg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\contact-bg.jpg",
@@ -587,6 +627,10 @@
     {
       "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\plants-store-logo-green.svg",
       "PackagePath": "staticwebassets\\assets\\images\\plants-store-logo-green.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\cactus1-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\cactus1-free-img.jpg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\cactus2-free-img.jpg",
@@ -609,8 +653,20 @@
       "PackagePath": "staticwebassets\\assets\\images\\product\\cactus6-free-img.jpg"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\e7d7a0ed-df0b-4799-ae09-63d136588238-herobg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\e7d7a0ed-df0b-4799-ae09-63d136588238-herobg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\ec1530f1-b3d3-4c64-a7a0-df6b036e0c00-CTA-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\ec1530f1-b3d3-4c64-a7a0-df6b036e0c00-CTA-bg.jpg"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\plant1-free-img.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\product\\plant1-free-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\plant2-free-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\plant2-free-img.jpg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\plant3-free-img.jpg",
@@ -631,10 +687,6 @@
     {
       "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\product\\product-detail\\cactus2-free-img.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\product\\product-detail\\cactus2-free-img.jpg"
-    },
-    {
-      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\cactus1-free-img.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\shop-page\\card\\cactus1-free-img.jpg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\cactus2-free-img.jpg",
@@ -661,10 +713,6 @@
       "PackagePath": "staticwebassets\\assets\\images\\shop-page\\card\\plant1-free-img.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plant2-free-img.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\shop-page\\card\\plant2-free-img.jpg"
-    },
-    {
       "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\card\\plant3-free-img.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\shop-page\\card\\plant3-free-img.jpg"
     },
@@ -683,6 +731,10 @@
     {
       "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\shop-page\\store-bg.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\shop-page\\store-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\testimonials\\3a1d9f48-2f37-46b3-b0a7-02c830ce5718-CTA-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\testimonials\\3a1d9f48-2f37-46b3-b0a7-02c830ce5718-CTA-bg.jpg"
     },
     {
       "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\testimonials\\testimonial-2.jpg",

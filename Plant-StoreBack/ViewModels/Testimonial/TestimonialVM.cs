@@ -8,7 +8,7 @@
         public string Description { get; set; }
         public string Name { get; set; }
         public string Position { get; set; }
-        public DateTime CreateDate { get; set; }
+        public DateTime CreateTime { get; set; }
 
     }
 }

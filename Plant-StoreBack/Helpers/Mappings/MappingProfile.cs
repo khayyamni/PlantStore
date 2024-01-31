@@ -25,14 +25,29 @@ namespace Plant_StoreBack.Helpers.Mappings
             CreateMap<Product, ProductVM>().ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.Category.Name))
                                            .ForMember(dest => dest.Image, opt => opt.MapFrom(src => src.Images.FirstOrDefault(m => m.IsMain).Image));
 
+            CreateMap<Product, ProductDetailVM>().ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.Category.Name))
+                              .ForMember(dest => dest.Images, opt => opt.MapFrom(src => src.Images));
+
+            CreateMap<ProductCreateVM, Product>().ReverseMap();
+            CreateMap<ProductEditVM, Product>();
             CreateMap<Banner, BannerVM>().ReverseMap();
             CreateMap<Elementor, ElementorVM>().ReverseMap();
             CreateMap<Blog, BlogVM>().ReverseMap();
+            CreateMap<BlogVM, BlogEditVM>();
+            CreateMap<BlogEditVM, Blog>();
+            CreateMap<BlogCreateVM, Blog>();
             CreateMap<Featured, FeaturedVM>().ReverseMap();
             CreateMap<Help, HelpVM>().ReverseMap();
+            CreateMap<HelpVM, HelpEditVM>().ReverseMap();
+            CreateMap<HelpEditVM, Help>();
             CreateMap<Interested, InterestedVM>().ReverseMap();
+            CreateMap<InterestedVM, InterestedEditVM>();
+            CreateMap<InterestedEditVM, Interested>();
             CreateMap<Category, CategoryVM>();
             CreateMap<Testimonial, TestimonialVM>();
+            CreateMap<TestimonialCreateVM, Testimonial>();
+            CreateMap<TestimonialVM, TestimonialEditVM>().ReverseMap();
+            CreateMap<TestimonialEditVM, Testimonial>();
             CreateMap<About, AboutVM>();
             CreateMap<Team, TeamVM>();
             CreateMap<Company, CompanyVM>();
@@ -40,6 +55,7 @@ namespace Plant_StoreBack.Helpers.Mappings
             CreateMap<ContactVM, ContactMessageVM>().ReverseMap();
             CreateMap<BannerVM, BannerEditVM>().ReverseMap();
             CreateMap<BannerEditVM,Banner>().ReverseMap();
+            
 
         }
     }

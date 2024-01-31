@@ -9,6 +9,8 @@
         public string Image { get; set; }
         public string CategoryName { get; set; }
         public int CategoryId { get; set; }
+		public DateTime CreateTime { get; set; }
 
-    }
+
+	}
 }

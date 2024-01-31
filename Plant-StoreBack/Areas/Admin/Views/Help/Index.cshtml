@@ -1,0 +1,61 @@
+﻿@model HelpVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container mt-5">
+	<h1 class="text-center mt-3 mb-3">Banner</h1>
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>
+						Title
+					</th>
+					<th>
+						Description1
+					</th>
+					<th>
+						Description2
+					</th>
+					<th>
+						Operations
+					</th>
+
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr data-id="">
+					
+					<td>
+						@Model.Title
+					</td>
+
+
+					<td>
+						@Model.Desc1.Substring(0, (int)Math.Ceiling(Model.Desc1.Length * 0.08))...
+
+					</td>
+					<td>
+						@Model.Desc2.Substring(0, (int)Math.Ceiling(Model.Desc2.Length * 0.08))...
+					</td>
+					
+
+					<td>
+						<a class="btn btn-outline-info" asp-action="Detail" asp-route-id="@Model.Id">Detail</a>
+						<a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+
+					</td>
+
+				</tr>
+
+
+
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+

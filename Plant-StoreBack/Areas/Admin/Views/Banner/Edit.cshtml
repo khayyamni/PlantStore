@@ -27,8 +27,11 @@
         <input class="form-control" id="customFile" asp-for="Photo"/>
         <span class="text-danger" asp-validation-for="Photo"></span>
         <div class="form-group">
-            <input class="form-control" id="customFile" asp-for="Title" />
-            <span class="text-danger" asp-validation-for="Desc"></span>
+            <label style="padding-left:6px;" for="formFile" class="form-label my-2">Title</label>
+            <input class="form-control mt-3" style="background-color: white" id="customFile" asp-for="Title" />
+
+            <label style="padding-left:6px;" for="formFile" class="form-label my-2">Description</label>
+            <input class="form-control mt-3" style="background-color:white;" id="customFile" asp-for="Desc" />
         </div>
 
         <div class="buttons my-3">
