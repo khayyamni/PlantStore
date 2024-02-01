@@ -10,7 +10,7 @@
         public string DescLeft { get; set; }
         public string DescRight { get; set; }
 
-        public DateTime CreatedDate { get; set; }
+        public DateTime CreateTime { get; set; }
 
     }
 }

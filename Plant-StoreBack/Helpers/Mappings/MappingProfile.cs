@@ -48,9 +48,16 @@ namespace Plant_StoreBack.Helpers.Mappings
             CreateMap<TestimonialCreateVM, Testimonial>();
             CreateMap<TestimonialVM, TestimonialEditVM>().ReverseMap();
             CreateMap<TestimonialEditVM, Testimonial>();
-            CreateMap<About, AboutVM>();
+            CreateMap<About, AboutVM>().ReverseMap();
+            CreateMap<AboutVM, AboutEditVM>().ReverseMap();
+            CreateMap<AboutEditVM, About>();
             CreateMap<Team, TeamVM>();
+            CreateMap<TeamCreateVM, Team>();
+            CreateMap<TeamEditVM, Team>();
+            CreateMap<TeamVM, TeamEditVM>();
             CreateMap<Company, CompanyVM>();
+            CreateMap<CompanyEditVM, CompanyVM>().ReverseMap();
+            CreateMap<CompanyEditVM, Company>().ReverseMap();
             CreateMap<ContactMessage, ContactMessageVM>().ReverseMap();
             CreateMap<ContactVM, ContactMessageVM>().ReverseMap();
             CreateMap<BannerVM, BannerEditVM>().ReverseMap();

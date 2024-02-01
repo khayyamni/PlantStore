@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Plant_StoreBack.Data;
+using Plant_StoreBack.Models;
 using Plant_StoreBack.Services.Interfaces;
 using Plant_StoreBack.ViewModels.About;
+using Plant_StoreBack.ViewModels.Help;
 
 namespace Plant_StoreBack.Services
 {
@@ -26,5 +28,21 @@ namespace Plant_StoreBack.Services
             AboutVM about = _mapper.Map<AboutVM>(datas);
             return about;
         }
+
+
+        public async Task EditAsync(AboutEditVM request)
+        {
+            About dbAbout = await _context.Abouts.FirstOrDefaultAsync(m => m.Id == request.Id);
+
+
+            _mapper.Map(request, dbAbout);
+
+
+
+            _context.Abouts.Update(dbAbout);
+
+            await _context.SaveChangesAsync();
+        }
+
     }
 }

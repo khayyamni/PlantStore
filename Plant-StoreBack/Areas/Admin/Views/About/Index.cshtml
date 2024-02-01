@@ -1,0 +1,56 @@
+﻿@model AboutVM
+@{
+	ViewData["Title"] = "Index";
+}
+
+<div class="container mt-5">
+	<h1 class="text-center mt-3 mb-3">Banner</h1>
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>
+						Title
+					</th>
+					<th>
+						Description
+					</th>
+					<th>
+						Operations
+					</th>
+
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr data-id="">
+
+					<td>
+						@Model.Title.Substring(0, (int)Math.Ceiling(Model.Description.Length * 0.08))...
+					</td>
+
+
+					<td>
+						@Model.Description.Substring(0, (int)Math.Ceiling(Model.Description.Length * 0.08))...
+
+					</td>
+				
+
+
+					<td>
+						<a class="btn btn-outline-info" asp-action="Detail" asp-route-id="@Model.Id">Detail</a>
+						<a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+
+					</td>
+
+				</tr>
+
+
+
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+

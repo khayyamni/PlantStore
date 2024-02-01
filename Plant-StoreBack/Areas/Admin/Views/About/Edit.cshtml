@@ -1,0 +1,45 @@
+﻿@model AboutEditVM
+
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+
+
+@section css{
+    <style>
+
+
+        input {
+            font-size: 18px !important;
+            font-weight: 600 !important;
+        }
+
+    </style>
+}
+
+<div class="container my-5">
+    <h1 class="text-center mt-3 mb-3">Edit</h1>
+    <form style="width: 70%; height:100px;" class="forms-sample" asp-action="Edit" method="post" enctype="multipart/form-data">
+
+
+        <div class="form-group">
+            <label style="padding-left:6px;" for="formFile" class="form-label my-2">Title</label>
+
+            <input class="form-control mt-3" style="background-color:white; id="customFile" asp-for="Title" />
+            <label style="padding-left:6px;" for="formFile" class="form-label my-2">Description</label>
+
+            <input class="form-control mt-3" style="background-color:white;" id="customFile" asp-for="Description" />
+
+        </div>
+
+        <div class="buttons my-3">
+            <button type="submit" class="btn btn-primary mr-2">Submit</button>
+            <a class="btn btn-light" asp-action="Index">Cancel</a>
+        </div>
+    </form>
+</div>
+
+

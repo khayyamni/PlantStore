@@ -1,4 +1,4 @@
-﻿using Plant_StoreBack.Models;
+﻿
 using Plant_StoreBack.ViewModels.About;
 
 namespace Plant_StoreBack.Services.Interfaces
@@ -7,5 +7,7 @@ namespace Plant_StoreBack.Services.Interfaces
     {
         Task<AboutVM> GetAllAsync();
         Task<AboutVM> GetByIdAsync(int id);
+        Task EditAsync(AboutEditVM request);
+
     }
 }
