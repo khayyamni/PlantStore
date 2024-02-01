@@ -51,6 +51,21 @@ namespace Plant_StoreBack.Services
             return contactMessage;
         }
 
+
+
+
+
+        public async Task CreateAsync(ContactCreateMessageVM contact)
+        {
+            var data = _mapper.Map<ContactMessage>(contact);
+
+
+            await _context.ContactMessages.AddAsync(data);
+            await _context.SaveChangesAsync();
+        }
+
+
+
     }
 
 }

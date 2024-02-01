@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RLnwrwM6O6M8g6DczSxmaYu7HRlN/2O6HgXb5nWCmsM=",
+  "Hash": "T0j5+YzxmrlypsQ1Pz7ZUQaUsz2Ur3N5BztCeA3sZt0=",
   "Source": "Plant-StoreBack",
   "BasePath": "_content/Plant-StoreBack",
   "Mode": "Default",
@@ -2395,6 +2395,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\7ca06d23-c607-4e15-98a0-4a389fecaddc-CTA-bg.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\95614df2-e189-4ded-a0d8-e39940bce0aa-cactus4-free-img.jpg",
+      "SourceId": "Plant-StoreBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\",
+      "BasePath": "_content/Plant-StoreBack",
+      "RelativePath": "assets/images/95614df2-e189-4ded-a0d8-e39940bce0aa-cactus4-free-img.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\95614df2-e189-4ded-a0d8-e39940bce0aa-cactus4-free-img.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\about-page\\about-bg.jpg",

@@ -9,6 +9,8 @@ namespace Plant_StoreBack.Services.Interfaces
         ContactVM GetData();
         Task<List<ContactMessageVM>> GetAllMessagesAsync();
         Task<ContactMessageVM> GetMessageByIdAsync(int id);
+        Task CreateAsync(ContactCreateMessageVM contact);
+
 
     }
 }

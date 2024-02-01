@@ -63,24 +63,26 @@
                 
                 <div class="form">
                   <h4> Send Us a Message</h4>
-                  <div class="mb-3">
-                    <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
-                  </div>
-                  <div class="mb-3">
-                    <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-                  </div>
-                  <div class="mb-3">
-                    <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Subject">
-                  </div>
-                  <div class="mb-3">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message"  rows="3"></textarea>
-                  </div>
-                  <div class="mb-3">
-                    <button type="button" class="btn btn-danger">Send Message</button>
-                  </div>
+                 <form asp-action="CreateMessage" method="post" id="message-form">     
+                     <div class="mb-3">
+                      <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                       <input asp-for="@Model.ContactMessage.Name" class="form-control" name="name" id="exampleFormControlInput1" required placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                     <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                     <input asp-for="@Model.ContactMessage.Email" class="form-control" id="exampleFormControlInput1" name="email" required placeholder=" Your Email">
+                    </div>
+                    <div class="mb-3">
+                      <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                       <input asp-for="@Model.ContactMessage.Subject" class="form-control" id="exampleFormControlInput1" name="subject" required placeholder="Subject">
+                    </div>
+                    <div class="mb-3">
+                         <textarea asp-for="@Model.ContactMessage.Message" style="border:none; outline:none;" cols="110" rows="3" name="message" required placeholder="Message" ></textarea>
+                    </div>
+                   <div class="mb-3">
+                      <button type="submit" class="btn btn-danger">Send Message</button>
+                   </div>
+                  </form>
                 </div>
               </div>
               </div>

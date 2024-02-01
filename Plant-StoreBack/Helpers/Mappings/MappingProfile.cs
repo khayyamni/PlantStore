@@ -12,6 +12,7 @@ using Plant_StoreBack.ViewModels.Featured;
 using Plant_StoreBack.ViewModels.Help;
 using Plant_StoreBack.ViewModels.Interested;
 using Plant_StoreBack.ViewModels.Product;
+using Plant_StoreBack.ViewModels.Setting;
 using Plant_StoreBack.ViewModels.Team;
 using Plant_StoreBack.ViewModels.Testimonial;
 
@@ -67,7 +68,8 @@ namespace Plant_StoreBack.Helpers.Mappings
             CreateMap<ContactVM, ContactMessageVM>().ReverseMap();
             CreateMap<BannerVM, BannerEditVM>().ReverseMap();
             CreateMap<BannerEditVM,Banner>().ReverseMap();
-            
+            CreateMap<SettingEditVM, Setting>();
+            CreateMap<ContactCreateMessageVM, ContactMessage>();
 
         }
     }
