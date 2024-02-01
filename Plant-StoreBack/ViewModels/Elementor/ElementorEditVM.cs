@@ -1,10 +1,9 @@
 ﻿namespace Plant_StoreBack.ViewModels.Elementor
 {
-    public class ElementorVM
+    public class ElementorEditVM
     {
         public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public DateTime CreateTime { get; set; }
     }
 }

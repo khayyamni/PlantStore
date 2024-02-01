@@ -1,0 +1,40 @@
+﻿@model CategoryCreateVM
+@{
+    ViewData["Title"] = "Create";
+}
+
+@section css{
+    <style>
+
+
+        input {
+            font-size: 18px !important;
+            font-weight: 600 !important;
+        }
+
+        textarea {
+            height: 200px !important;
+            font-size: 17px !important;
+        }
+    </style>
+}
+
+<div class="container mt-5 mb-5">
+    <h1 class="text-center mt-3 mb-3">Create</h1>
+
+    <form class="forms-sample" method="post" asp-action="Create" enctype="multipart/form-data">
+
+
+        <div class="form-group">
+            <label asp-for="Name">Add Title</label>
+            <input asp-for="Name" class="form-control" style="background-color:white;">
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+
+   
+
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <a class="btn btn-light" asp-action="Index">Back</a>
+    </form>
+</div>
+

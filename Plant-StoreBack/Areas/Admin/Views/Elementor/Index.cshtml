@@ -1,4 +1,4 @@
-﻿@model List<BlogVM>
+﻿@model List<ElementorVM>
 
 @{
 	ViewData["Title"] = "Index";
@@ -6,21 +6,18 @@
 
 
 <div class="container my-5">
-	<h1 class="text-center mt-3 mb-3">Blogs</h1>
-	<a class="btn btn-success text-white" asp-action="Create" >Create</a>
+	<h1 class="text-center mt-3 mb-3">Elementor</h1>
+
 	<div class="table-responsive">
 		<table class="table table-striped">
 			<thead>
 				<tr>
 					<th>
-						Image
-					</th>
-					<th>
 						Title
 					</th>
 					<th>
 						Description
-                    </th>
+					</th>
 					<th>
 						Create Date
 					</th>
@@ -35,16 +32,13 @@
 				@foreach (var item in Model)
 				{
 					<tr data-id="">
-						<td class="py-1">
-							<img src="~/assets/images/blog/@item.Image" style="margin-top:10px; width:80%;height:80px;border-radius:0" alt="image" />
-						</td>
 						<td>
-							@item.Title
+							@item.Title.Substring(0, (int)Math.Ceiling(item.Title.Length * 0.1))...
 						</td>
 
 
 						<td style=" white-space:normal">
-							@item.Description
+							@item.Description.Substring(0, (int)Math.Ceiling(item.Description.Length * 0.1))...
 						</td>
 						<td>
 							@item.CreateTime.ToString("dd/MM/yyyy")
@@ -54,7 +48,6 @@
 							<a class="btn btn-outline-info" asp-action="Detail" asp-route-id="@item.Id">Detail</a>
 							<a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
 							<form class="d-inline-block" method="post" asp-action="Delete" asp-route-id="@item.Id">
-								<button type="submit" class="btn btn-outline-danger">Delete</button>
 							</form>
 
 						</td>

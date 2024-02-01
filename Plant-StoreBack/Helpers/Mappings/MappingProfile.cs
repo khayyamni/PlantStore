@@ -32,6 +32,8 @@ namespace Plant_StoreBack.Helpers.Mappings
             CreateMap<ProductEditVM, Product>();
             CreateMap<Banner, BannerVM>().ReverseMap();
             CreateMap<Elementor, ElementorVM>().ReverseMap();
+            CreateMap<ElementorVM, ElementorEditVM>().ReverseMap();
+            CreateMap<ElementorEditVM, Elementor>().ReverseMap();
             CreateMap<Blog, BlogVM>().ReverseMap();
             CreateMap<BlogVM, BlogEditVM>();
             CreateMap<BlogEditVM, Blog>();
@@ -44,6 +46,9 @@ namespace Plant_StoreBack.Helpers.Mappings
             CreateMap<InterestedVM, InterestedEditVM>();
             CreateMap<InterestedEditVM, Interested>();
             CreateMap<Category, CategoryVM>();
+            CreateMap<CategoryCreateVM, Category>();
+            CreateMap<CategoryEditVM, Category>();
+            CreateMap<CategoryVM, CategoryEditVM>().ReverseMap();
             CreateMap<Testimonial, TestimonialVM>();
             CreateMap<TestimonialCreateVM, Testimonial>();
             CreateMap<TestimonialVM, TestimonialEditVM>().ReverseMap();

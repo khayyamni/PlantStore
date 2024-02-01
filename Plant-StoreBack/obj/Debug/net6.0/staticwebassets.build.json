@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YjLSkSKsDankWelA21Z9dUViRGyT1FeXnn5t2Cf4I3M=",
+  "Hash": "RLnwrwM6O6M8g6DczSxmaYu7HRlN/2O6HgXb5nWCmsM=",
   "Source": "Plant-StoreBack",
   "BasePath": "_content/Plant-StoreBack",
   "Mode": "Default",
@@ -2412,6 +2412,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\about-page\\about-bg.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\about-page\\blog\\0bba9b51-52d8-4c51-ba74-af0865f28a22-bg4-free-img.jpg",
+      "SourceId": "Plant-StoreBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\",
+      "BasePath": "_content/Plant-StoreBack",
+      "RelativePath": "assets/images/about-page/blog/0bba9b51-52d8-4c51-ba74-af0865f28a22-bg4-free-img.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\about-page\\blog\\0bba9b51-52d8-4c51-ba74-af0865f28a22-bg4-free-img.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\images\\about-page\\blog\\17facc97-a80e-45cb-9d22-7759f30dfc76-bg4-free-img.jpg",
