@@ -53,6 +53,12 @@ namespace Plant_StoreBack.Services
 
 
 
+        public async Task DeleteAsync(int id)
+        {
+            ContactMessage dbContactMessage = await _context.ContactMessages.FirstOrDefaultAsync(m => m.Id == id);
+            _context.ContactMessages.Remove(dbContactMessage);
+            await _context.SaveChangesAsync();
+        }
 
 
         public async Task CreateAsync(ContactCreateMessageVM contact)

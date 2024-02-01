@@ -8,7 +8,7 @@
         public string Message { get; set; }
         public string Subject { get; set; }
 
-        public DateTime CreatedDate { get; set; }
+        public DateTime CreateTime { get; set; }
 
     }
 }

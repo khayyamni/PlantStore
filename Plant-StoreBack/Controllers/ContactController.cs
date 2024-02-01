@@ -25,5 +25,17 @@ namespace Plant_StoreBack.Controllers
 
             return View(model);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateMessage(ContactCreateMessageVM request)
+        {
+
+            await _contactService.CreateAsync(request);
+
+            return RedirectToAction("Index", "Contact");
+
+        }
+
     }
 }

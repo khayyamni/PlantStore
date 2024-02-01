@@ -101,15 +101,15 @@ header .navigation .icon .basket span {
 #banner .banner-wright .banner-amazing h1 {
   font-size: 60px;
 }
-#banner .banner-wright button {
+#banner .banner-wright a {
   width: 140px;
-  height: 45px;
+  padding:13px;
   border-radius: 30px;
   background-color: #fc5f5f;
   border: none;
   transition: 0.5s;
 }
-#banner .banner-wright button:hover {
+#banner .banner-wright a:hover {
   background-color: rgba(76, 171, 3, 0.799);
   transition: 0.5s;
 }
