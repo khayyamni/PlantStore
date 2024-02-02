@@ -777,6 +777,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\testimonials\\user3-free-img.jpg"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\js\\Basket.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Basket.js"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\js\\account.js",
       "PackagePath": "staticwebassets\\assets\\js\\account.js"
     },
@@ -787,6 +791,10 @@
     {
       "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\js\\shop.js",
       "PackagePath": "staticwebassets\\assets\\js\\shop.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\js\\wishlist.js",
+      "PackagePath": "staticwebassets\\assets\\js\\wishlist.js"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Plant-StoreBack.Microsoft.AspNetCore.StaticWebAssets.props",

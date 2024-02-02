@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "T0j5+YzxmrlypsQ1Pz7ZUQaUsz2Ur3N5BztCeA3sZt0=",
+  "Hash": "sR60G7CAqtEJ93kfaFceaQPBw2nyAnpMYW7PFqZFK5k=",
   "Source": "Plant-StoreBack",
   "BasePath": "_content/Plant-StoreBack",
   "Mode": "Default",
@@ -3349,6 +3349,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\account.js"
     },
     {
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\js\\Basket.js",
+      "SourceId": "Plant-StoreBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\",
+      "BasePath": "_content/Plant-StoreBack",
+      "RelativePath": "assets/js/Basket.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\Basket.js"
+    },
+    {
       "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\js\\home.js",
       "SourceId": "Plant-StoreBack",
       "SourceType": "Discovered",
@@ -3381,6 +3398,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\shop.js"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\js\\wishlist.js",
+      "SourceId": "Plant-StoreBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\",
+      "BasePath": "_content/Plant-StoreBack",
+      "RelativePath": "assets/js/wishlist.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\wishlist.js"
     }
   ]
 }

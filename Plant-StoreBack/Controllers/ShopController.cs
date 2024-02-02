@@ -18,19 +18,25 @@ namespace Plant_StoreBack.Controllers
         private readonly ICategoryService _categoryService;
         private readonly UserManager<AppUser> _userManager;
         private readonly ISettingsService _settingService;
+        private readonly IBasketService _basketService;
+        private readonly IWishlistService _wishlistService;
 
 
         public ShopController(AppDbContext context, 
                               IProductService productService,
                               ICategoryService categoryService,
                               UserManager<AppUser> userManager,
-                              ISettingsService settingService)
+                              ISettingsService settingService,
+                              IBasketService basketService,
+                              IWishlistService wishlistService)
         {
             _context = context;
             _productService = productService;
             _userManager = userManager;
             _categoryService = categoryService;
             _settingService = settingService;
+            _basketService = basketService;
+            _wishlistService = wishlistService;
         }
 
 
@@ -162,6 +168,46 @@ namespace Plant_StoreBack.Controllers
             };
 
             return View(model);
+        }
+
+
+
+
+        [HttpPost]
+
+        public async Task<IActionResult> AddBasket(int? id)
+        {
+
+
+            if (id is null) return RedirectToAction("Index", "Error"); ;
+
+            ProductVM product = await _productService.GetByIdAsync((int)id);
+
+            if (product is null) return RedirectToAction("Index", "Error");
+
+            _basketService.AddBasket((int)id, product);
+
+
+            return Ok();
+        }
+
+
+
+        [HttpPost]
+
+        public async Task<IActionResult> AddWishlist(int? id)
+        {
+
+
+            if (id is null) return RedirectToAction("Index", "Error"); ;
+
+            ProductVM product = await _productService.GetByIdAsync((int)id);
+
+            if (product is null) return RedirectToAction("Index", "Error"); ;
+
+            int a = _wishlistService.AddWishlist((int)id, product);
+
+            return Ok(a);
         }
 
 

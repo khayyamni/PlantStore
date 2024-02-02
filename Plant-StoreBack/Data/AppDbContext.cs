@@ -28,6 +28,8 @@ namespace Plant_StoreBack.Data
         public DbSet<ContactMessage> ContactMessages { get; set; }
         public DbSet<Wishlist> Wishlists { get; set; }
         public DbSet<WishlistProduct> WishlistProducts { get; set; }
+        public DbSet<Basket> Baskets { get; set; }
+        public DbSet<BasketProduct> BasketProducts { get; set; }
 
 
 

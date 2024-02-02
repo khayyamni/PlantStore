@@ -69,6 +69,23 @@ header .navigation a:hover {
 header .navigation .icon .basket {
   position: relative;
 }
+
+    header .navigation .icon .wishlist-count {
+        position: relative;
+        top: -13px;
+        left: -4px;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        align-items: center;
+        font-size: 13px;
+        display: inline-block;
+    }
+
+
 header .navigation .icon .basket span {
   position: absolute;
   bottom: 14px;
