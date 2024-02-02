@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sR60G7CAqtEJ93kfaFceaQPBw2nyAnpMYW7PFqZFK5k=",
+  "Hash": "bR4cviTkXFuVYANNRdwE5MG0iEqEntwXuAPKosdsPkk=",
   "Source": "Plant-StoreBack",
   "BasePath": "_content/Plant-StoreBack",
   "Mode": "Default",
@@ -3381,6 +3381,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\home.js"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\js\\productdetail.js",
+      "SourceId": "Plant-StoreBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\",
+      "BasePath": "_content/Plant-StoreBack",
+      "RelativePath": "assets/js/productdetail.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\productdetail.js"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\js\\shop.js",

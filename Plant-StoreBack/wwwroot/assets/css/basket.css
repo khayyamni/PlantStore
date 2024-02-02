@@ -139,7 +139,7 @@ header .navigation .icon .basket span {
   background-color: #fc5f5f;
   color: white;
   transition: 0.5s;
-  padding: 20px 30px;
+  /*padding: 20px 30px;*/
   letter-spacing: 3px;
   border-radius: 30px;
 }

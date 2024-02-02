@@ -23,13 +23,13 @@
                             <img src="~/assets/images/product/@Model.Image" alt="">
                         </div>
                     </div>
-                    <div class="col-6" style="background-color: white;">
-                        <div class="desc">
+                    <div class="col-6 detail" style="background-color: white;">
+                        <div class="desc cart">
                             <a href="">@Model.CategoryName</a>
                             <h1>@Model.Name</h1>
                             <p>$@Model.Price <span>+ Free Shipping</span></p>
                             <p>@Model.Description</p>
-                            <button type="button" class="btn btn-danger">Add To Cart</button>
+                            <button type="button" class="btn btn-danger add-cart" data-id="@Model.Id">Add To Cart</button>
                             <hr>
                             <p>Category: <a href="">@Model.CategoryName</a></p>
                         </div>
@@ -46,4 +46,8 @@
     </section>
     <hr>
 </main>
+
+@section script{
+    <script src="~/assets/js/productdetail.js"></script>
+}
 

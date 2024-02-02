@@ -789,6 +789,10 @@
       "PackagePath": "staticwebassets\\assets\\js\\home.js"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\js\\productdetail.js",
+      "PackagePath": "staticwebassets\\assets\\js\\productdetail.js"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\BackEnd\\Plant-StoreBack\\wwwroot\\assets\\js\\shop.js",
       "PackagePath": "staticwebassets\\assets\\js\\shop.js"
     },

@@ -6,13 +6,12 @@
         @foreach (var item in Model)
         {
             <div class="col-lg-6">
-                <div class="card-image">
+            <div class="card-image product-image" data-id="@item.Id">
                     <div class="wishlist-icon">
-                        <i class="fa-regular fa-heart wishlist-icons"></i>
-                        <i class="fa-solid fa-heart wishlist d-none"></i>
+                    <i class="fa-solid fa-heart wishlist-add" style="color:red"></i>
                     </div>
                     <div class="bucket-icon">
-                        <i class="fa-solid fa-basket-shopping"></i>
+                        <i class="fa-solid fa-basket-shopping cart-add"></i>
                     </div>
                     <a asp-controller="Shop" asp-action="ProductDetails" asp-route-id="@item.Id">
                         <img src="~/assets/images/shop-page/card/@item.Image"
