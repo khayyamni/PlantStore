@@ -7,12 +7,30 @@
         {
             <div class="col-lg-6">
             <div class="card-image product-image" data-id="@item.Id">
+                @if (User.Identity.IsAuthenticated)
+                {
                     <div class="wishlist-icon">
-                    <i class="fa-solid fa-heart wishlist-add" style="color:red"></i>
+                        <i class="fa-solid fa-heart wishlist wishlist-add"></i>
                     </div>
                     <div class="bucket-icon">
                         <i class="fa-solid fa-basket-shopping cart-add"></i>
                     </div>
+                }
+                else
+                {
+                    <div class="wishlist-icon">
+                        <a asp-controller="Account" asp-action="Login">
+                            <i class="fa-solid fa-heart wishlist wishlist-add"></i>
+
+                        </a>
+                    </div>
+                    <div class="bucket-icon">
+                        <a asp-controller="Account" asp-action="Login">
+                            <i class="fa-solid fa-basket-shopping cart-add"></i>
+
+                        </a>
+                    </div>
+                }
                     <a asp-controller="Shop" asp-action="ProductDetails" asp-route-id="@item.Id">
                         <img src="~/assets/images/shop-page/card/@item.Image"
                              alt="" />

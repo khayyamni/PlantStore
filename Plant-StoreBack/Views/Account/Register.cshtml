@@ -1,0 +1,65 @@
+﻿@model RegisterVM
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+@section css {
+    <link rel="stylesheet" href="~/assets/css/account.css">
+}
+
+
+<div data-id="2" class="account">
+    <div style="color:red;text-align:center" ; asp-validation-summary="All"></div>
+
+    <div class="register">
+        <form method="post" asp-action="Register">
+            <div class="container">
+                <label asp-for="FullName"><b>FullName</b></label>
+                <input asp-for="FullName" placeholder="Enter FullName" style="width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: none;">
+
+                <label asp-for="UserName"><b>UserName</b></label>
+                <input asp-for="UserName" placeholder="Enter Username" style="width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: none;">
+
+                <label asp-for="Email"><b>Email</b></label>
+                <input asp-for="Email" placeholder="Enter Email">
+
+
+                <label asp-for="Password"><b>Password</b></label>
+                <input asp-for="Password" placeholder="Enter Password">
+
+                <label asp-for="ConfirmPassword"><b>Confirm Password</b></label>
+                <input asp-for="ConfirmPassword" placeholder="Enter Confirm Password">
+
+                <button type="submit">Register</button>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <span class="psw">Already have an account?</span>
+                <a asp-action="Login" data-id="1" type="button" class="register btn">Login</a>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+
+@section script{
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/assets/js/account.js"></script>
+    <script src="~/assets/js/shop.js"></script>
+}

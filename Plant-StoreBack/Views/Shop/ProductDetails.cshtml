@@ -29,7 +29,21 @@
                             <h1>@Model.Name</h1>
                             <p>$@Model.Price <span>+ Free Shipping</span></p>
                             <p>@Model.Description</p>
-                            <button type="button" class="btn btn-danger add-cart" data-id="@Model.Id">Add To Cart</button>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <button type="button" class="btn btn-danger add-cart" data-id="@Model.Id">Add To Cart</button>
+
+                            }
+                            else
+                            {
+                                <a asp-controller="Account" asp-action="Login" style="margin-top: 20px;
+
+    border-radius: 30px;
+    background-color: #fc5f5f;
+    border: none;
+    transition: 0.5s;    padding: 11px 89px;
+    color: white;" data-id="@Model.Id">Add To Cart</a>
+                            }
                             <hr>
                             <p>Category: <a href="">@Model.CategoryName</a></p>
                         </div>

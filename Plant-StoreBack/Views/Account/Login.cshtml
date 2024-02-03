@@ -1,0 +1,48 @@
+﻿@model LoginVM
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+
+
+
+
+@section css {
+    <link rel="stylesheet" href="~/assets/css/account.css">
+}
+
+
+<div class="container mt-5">
+    <div data-id="1" class="account">
+        <div class="login">
+            <form method="post" asp-action="Login">
+                <div class="container">
+                    <label asp-for="EmailOrUsername"><b>Email or Username</b></label>
+                    <input asp-for="EmailOrUsername">
+
+                    <label asp-for="Password"><b>Password</b></label>
+                    <input asp-for="Password">
+
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" asp-for="IsRememberMe"> Remember me
+                    </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <a asp-action="Register" data-id="2" type="button" class="register btn ">Register</a>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+
+@section script {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/assets/js/account.js"></script>
+}

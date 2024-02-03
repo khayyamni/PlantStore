@@ -7,11 +7,12 @@ using Plant_StoreBack.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+
 
 builder.Services.AddAutoMapper(typeof(Program));
 
+// Add services to the container.
+builder.Services.AddControllersWithViews();
 
 
 
@@ -21,6 +22,27 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddIdentity<AppUser, IdentityRole>()
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
+
+
+builder.Services.Configure<IdentityOptions>(option =>
+{
+    option.Password.RequireNonAlphanumeric = true; //simvol olab biler
+    option.Password.RequireDigit = true; //reqem olmalidir
+    option.Password.RequireLowercase = true; //balaca herf olmalidir
+    option.Password.RequireUppercase = true; //boyuk olmalidir
+    option.Password.RequiredLength = 6; //minimum 6 
+
+    option.User.RequireUniqueEmail = true;
+
+    //option.SignIn.RequireConfirmedEmail = true;
+    //Default lockout  settings
+
+    option.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+    option.Lockout.MaxFailedAccessAttempts = 5;
+    option.Lockout.AllowedForNewUsers = true;
+
+});
+
 
 builder.Services.AddScoped<ISettingsService, SettingService>();
 builder.Services.AddScoped<IBannerService, BannerService>();
@@ -39,6 +61,8 @@ builder.Services.AddScoped<ICompanyService, CompanyService>();
 builder.Services.AddScoped<IContactService, ContactService>();
 builder.Services.AddScoped<IBasketService, BasketService>();
 builder.Services.AddScoped<IWishlistService, WishlistService>();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
 
 
 

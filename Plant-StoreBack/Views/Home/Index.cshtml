@@ -85,12 +85,31 @@
                 {
                     <div class="col-3">
                         <div class="product-image" data-id="@item.Id">
-                            <div class="wishlist-icon">
-                                <i class="fa-solid fa-heart wishlist wishlist-add"></i>
-                            </div>
-                            <div class="bucket-icon">
-                                <i class="fa-solid fa-basket-shopping cart-add"></i>
-                            </div>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <div class="wishlist-icon">
+                                    <i class="fa-solid fa-heart wishlist wishlist-add"></i>
+                                </div>
+                                <div class="bucket-icon">
+                                    <i class="fa-solid fa-basket-shopping cart-add"></i>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="wishlist-icon">
+                                    <a asp-controller="Account" asp-action="Login">
+                                        <i class="fa-solid fa-heart wishlist wishlist-add"></i>
+
+                                    </a>
+                                </div>
+                                <div class="bucket-icon">
+                                    <a asp-controller="Account" asp-action="Login">
+                                        <i class="fa-solid fa-basket-shopping cart-add"></i>
+
+                                    </a>
+                                </div>
+                            }
+
                             <a asp-controller="Shop" asp-action="ProductDetails" asp-route-id="@item.Id">
                                 <img src="~/assets/images/product/@item.Image"
                                      alt="" />
